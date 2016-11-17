@@ -38,7 +38,7 @@ make install
 ```
 
 ## Documentation
-libtp3의 사용법은 [레퍼런스](http://)를 참조한다.
+libtp3의 사용법은 [레퍼런스](https://ezfarm-farmcloud.github.io/libtp3/)를 참조한다.
 
 ## Unit tests & Sample
 libtp3는 다음 명령을 통해 단위테스트를 수행할 수 있다.
