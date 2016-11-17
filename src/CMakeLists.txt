@@ -9,4 +9,4 @@ INCLUDE_DIRECTORIES (../include ../util)
 
 SET (LIBSRCS ttap3_base.c  ttap3_gcg.c  ttap3_gos.c  ttap3_process.c  ttap3_util.c ../util/mem.c)
 
-ADD_LIBRARY (tp3 STATIC ${LIBSRCS})
+ADD_LIBRARY (tp3 SHARED ${LIBSRCS})
