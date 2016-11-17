@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>libtp3: A library for TTAK.KO-06.0288 Part 3</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libtp3
+   </div>
+   <div id="projectbrief">Library for TTAK.KO-06.0288 Part 3</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">A library for TTAK.KO-06.0288 Part 3 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1>libtp3</h1>
+<p>libtp3 는 온실관제시스템 표준인 TTAK.KO-06.0288/R1 Part 3 표준을 구현한 라이브러리로, 온실 운영시스템과 온실 통합제어기 사이의 통신 메세지를 작성, 해석할 수 있다. 해당 표준에 대한 자세한 사항은 <a href="http://www.tta.or.kr/data/ttas_view.jsp?rn=1&amp;pk_num=TTAK.KO-06.0288-Part3">TTA 표준문서</a>를 참조하길 바란다.</p>
+<h1>libtp3의 구성</h1>
+<p>libtp3 는 5가지 모듈로 구성된다.</p><ul>
+<li>ttap3_base : 표준 메세지 구조를 처리할 수 있는 데이터 타입, 상수 및 함수 관련 모듈</li>
+<li>ttap3_util : 라이브러리에서 사용할 유틸리티 함수 및 관련 데이터 타입</li>
+<li>ttap3_process : 메세지 처리를 위한 콜백함수 관련 모듈</li>
+<li>ttap3_gcg : 온실통합제어기에서 사용할 API</li>
+<li>ttap3_gos : 온실운영시스템에서 사용할 API</li>
+</ul>
+<h1>Implementation</h1>
+<h2>Data structures</h2>
+<p>libtp3 는 크게 2가지 메세지 표현을 위한 자료구조를 가지고 있다. 하나는 실제 통신에서 사용할 byte의 배열에 해당하는 자료구조로 tp3_frame_t 타입으로 표현되는 것이고, 다른 하나는 프로그램 코드상에서 메세지에 쉽게 접근할 수 있도록 돕는 자료구조로 tp3_msg_t 타입이다.</p>
+<h3>tp3_frame_t</h3>
+<p><a href="http://www.tta.or.kr/data/ttas_view.jsp?rn=1&amp;pk_num=TTAK.KO-06.0288-Part3">TTAK.KO-06.0288/R1 Part 3 표준</a>에서는 메세지 프레임이 3가지 값(길이, 데이터, 체크섬)으로 구성된다. 길이는 4byte 정수이며, 데이터의 길이와 체크섬 2바이트를 합친 길이이다. 체크섬은 데이터의 바이트 단위 값을 XOR 한 값을 2byte로 표현한 것이다. 데이터는 다수의 필드로 구성되는데, 개별 필드 역시 3가지 값(필드코드, 필드길이, 필드데이터)으로 구성된다. 필드코드는 2byte 로 부여되는 값으로 tp3_fieldcode_t 으로 정의된다. 필드길이는 2byte 정수형으로 필드데이터의 길이를 나타낸다. 필드데이터는 필드코드에 따라 길이가 고정되지만 몇몇 필드에 있어서는 동적으로 길이가 결정된다.</p>
+<h3>tp3_msg_t</h3>
+<p>tp3_msg_t 타입은 tp3_frame_t로 표현되는 메세지 프레임을 프로그램 코드상에서 쉽게 접근할 수 있도록 파싱한 결과값이라고 할 수 있다. 고정헤더필드와 가변필드로 구성된다. 고정헤더필드는 tp3_header_t로 표현되며, 가변필드는 tp3_field_t의 배열로 표현된다.</p>
+<h2>Translation</h2>
+<p>tp3_frame_t 와 tp3_msg_t 간의 전환은 두 함수 tp3_parseframe 과 tp3_generateframe 으로 이루어진다. tp3_parseframe 함수는 tp3_frame_t 을 tp3_msg_t 으로 파싱해주는 역할을 수행하며, tp3_generateframe 함수는 tp3_msg_t을 이용하여 tp3_frame_t 를 생성해주는 역할을 수행한다.</p>
+<h2>Request Message Creation</h2>
+<p><a href="http://www.tta.or.kr/data/ttas_view.jsp?rn=1&amp;pk_num=TTAK.KO-06.0288-Part3">TTAK.KO-06.0288/R1 Part 3 표준</a> 에는 12가지 형식의 메세지가 정의되어 있다. 대부분의 메세지는 요청, 응답형식의 메세지로, 메세지의 종류에 따라 운영시스템 혹은 통합제어기 측에서 전송을 시작하게 된다. 통합제어기에서 전송할 수 있는 메세지는 4종이며, 운영시스템에서 전송할 수 있는 메세지는 8종이다. 각 메세지의 생성을 위해서는 다음의 메세지 생성 함수를 활용할 수 있다.</p>
+<h3>통합제어기</h3>
+<ul>
+<li>연결요청 : tp3_connectmsg</li>
+<li>네트워크 체크 : tp3_keepalivemsg</li>
+<li>상태정보 알림 : tp3_notifystatmsg</li>
+<li>환경정보 알림 : tp3_notifyenvmsg</li>
+</ul>
+<h3>운영시스템</h3>
+<ul>
+<li>상태정보 이력 : tp3_stathistmsg</li>
+<li>환경정보 이력 : tp3_envhistmsg</li>
+<li>프로파일 조회 : tp3_gcgconf, tp3_snodeconf, tp3_anodeconf, tp3_gcgattr, tp3_senattr, tp3_actattr</li>
+<li>프로파일 설정 : tp3_senattrupdate, tp3_actattrupdate</li>
+<li>장애 관리 : tp3_faultmng</li>
+<li>엑추에이터 제어 : tp3_actcontrol</li>
+<li>상태정보 요청 : tp3_statquery</li>
+<li>환경정보 요청 : tp3_envquery</li>
+</ul>
+<h2>Response Message</h2>
+<p>위의 메세지 생성함수에서 생성된 메세지는 2가지 방식으로 처리될 수 있다. 하나는 콜백함수를 사용하는 것이고, 다른 하나는 직접 메세지를 파싱하고, 처리하여 응답메세지를 만드는 방법이다. 콜백함수를 사용하는 경우 해당 메세지에 대한 직접적인 처리만을 수행할 수 있기 때문에 더 편하다. 직접 메세지를 처리하는 것은 특별한 이유가 있지 않는 한 권장하지 않는다.</p>
+<h3>콜백 함수의 사용</h3>
+<p>메세지 처리를 위한 콜백함수는 다음과 같이 정의된다. </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> tp3_stat_t </div>
+<div class="line">(*ptp3_rescb_t) (ptp3_msg_t preq, ptp3_msg_t pres, <span class="keywordtype">void</span> *data);</div>
+</div><!-- fragment --><p> preq는 요청메세지에 대한 포인터이고, pres는 생성할 응답메세지에 대한 포인터 이다. data는 사용자 정의 데이터에 대한 포인터로 사용자가 사전에 등록해 놓은 포인터를 전달한다. 콜백함수는 tp3_registcbfunc를 통해서 등록할 수 있으며, 이때 사용자 정의 데이터도 등록이 가능하다.</p>
+<h3>요청 메세지의 전/후처리</h3>
+<p>요청 메세지를 tp3_frame_t 형식으로 전달받게 되면, 해당 변수를 tp3_msg_t 형식으로 파싱한다. 파싱된 메세지를 이용하여 응답 메세지 헤더를 설정할 수 있고, 메세지를 처리한뒤, 응답코드를 설정한 tp3_msg_t 형식의 변수를 만든다. tp3_msg_t 타입의 응답 메세지를 이용하여 tp3_frame_t 형식의 메세지를 생성하면 요청메세지에 대한 처리가 완료된다. 이를 코드로 정리하면 다음과 같다.</p>
+<div class="fragment"><div class="line">tp3_frame_t frame;</div>
+<div class="line">tp3_msg_t req, res;</div>
+<div class="line">tp3_stat_t stat;</div>
+<div class="line"></div>
+<div class="line">.....</div>
+<div class="line"></div>
+<div class="line">tp3_parseframe (&amp;frame, &amp;req);</div>
+<div class="line"></div>
+<div class="line">tp3_initmsg (&amp;res);</div>
+<div class="line"></div>
+<div class="line">stat = tp3_executecallback (&amp;req, &amp;res);</div>
+<div class="line">tp3_setresponse (&amp;req, &amp;res, stat);</div>
+<div class="line"></div>
+<div class="line">tp3_generateframe (&amp;res, &amp;frame);</div>
+<div class="line">.....</div>
+</div><!-- fragment --><h1>Device Type</h1>
+<p><a href="http://www.tta.or.kr/data/ttas_view.jsp?rn=1&amp;pk_num=TTAK.KO-06.0288-Part3">TTAK.KO-06.0288/R1 Part 3 표준</a>에서는 센서의 타입이나 제어기의 타입을 정의하고 있지 않다. libtp3 에서는 다음과 같이 센서와 제어기의 타입을 정의하여 사용하고 있다.</p>
+<h2>Sensor Type</h2>
+<table class="doxtable">
+<tr>
+<th>코드 </th><th>값 </th><th>대상  </th></tr>
+<tr>
+<td>TP3_SENT_RAW </td><td>0x00 </td><td>RAW </td></tr>
+<tr>
+<td>TP3_SENT_INTTEMP</td><td>0x01 </td><td>내부온도 </td></tr>
+<tr>
+<td>TP3_SENT_INTDEWPNT </td><td>0x02 </td><td>내부이슬점 </td></tr>
+<tr>
+<td>TP3_SENT_INTREHUM </td><td>0x03 </td><td>내부상대습도 </td></tr>
+<tr>
+<td>TP3_SENT_EXTTEMP </td><td>0x04 </td><td>외부온도 </td></tr>
+<tr>
+<td>TP3_SENT_EXTHUM </td><td>0x05 </td><td>외부습도 </td></tr>
+<tr>
+<td>TP3_SENT_WINDDIR </td><td>0x08 </td><td>풍향 </td></tr>
+<tr>
+<td>TP3_SENT_WINDSPD </td><td>0x09 </td><td>풍속 </td></tr>
+<tr>
+<td>TP3_SENT_ILLUM </td><td>0x0A </td><td>조도 </td></tr>
+<tr>
+<td>TP3_SENT_SOLRAD </td><td>0x0B </td><td>일사량 </td></tr>
+<tr>
+<td>TP3_SENT_PRECIP </td><td>0x0C </td><td>강우 </td></tr>
+</table>
+<h2>Actuator Type</h2>
+<table class="doxtable">
+<tr>
+<th>코드 </th><th>값 </th><th>작동방식  </th></tr>
+<tr>
+<td>TP3_ACTT_RAW </td><td>0x00 </td><td>RAW </td></tr>
+<tr>
+<td>TP3_ACTT_ONOFF </td><td>0x01 </td><td>온/오프 </td></tr>
+<tr>
+<td>TP3_ACTT_TIME </td><td>0x02 </td><td>초단위 시간제어 </td></tr>
+<tr>
+<td>TP3_ACTT_PERCENT </td><td>0x03 </td><td>% 제어 </td></tr>
+</table>
+<p># How to build </p><div class="fragment"><div class="line">cmake .</div>
+<div class="line">make clean</div>
+<div class="line">make</div>
+<div class="line">make test</div>
+<div class="line">make doc</div>
+<div class="line">make install</div>
+</div><!-- fragment --><h1>Unit tests &amp; Sample</h1>
+<h2>Base test</h2>
+<ul>
+<li>test_base_frame : Generate &amp; Parse frame</li>
+<li>test_base_addnreadfield : Add field using 4 functions &amp; read the field</li>
+<li>test_base_errormsg : Error message</li>
+<li>test_base_response : Response message creation</li>
+</ul>
+<h2>Util</h2>
+<ul>
+<li>test_util_nodedata : Initialize &amp; release data for a node</li>
+<li>test_util_nsetdata : Initialize &amp; release data for a node set</li>
+<li>test_util_addfield : Add field from node data</li>
+<li>test_util_timestamp : Translate between epoch &amp; timestamp</li>
+<li>test_util_statblock : Generate &amp; parse status history block</li>
+<li>test_util_envblock : Generate &amp; parse environment history block</li>
+</ul>
+<h2>GCG &amp; GOS</h2>
+<ul>
+<li>test_gng_connect : Connection message</li>
+<li>test_gos_resmsgs : Response 4 messages</li>
+<li>test_gos_genmsgs : Generate 8 messages started from GOS</li>
+<li>test_gcg_resmsgs : Response 8 messages</li>
+<li>test_gos_cfmmsgs : Confirm 4 meesages</li>
+</ul>
+<h2>Process</h2>
+<ul>
+<li>test_process_callback : Callback Test</li>
+</ul>
+<h1>How to use</h1>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 목 11월 17 2016 10:37:29, 프로젝트명 : libtp3, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>
