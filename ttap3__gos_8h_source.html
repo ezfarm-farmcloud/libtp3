@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>libtp3: include/ttap3_gos.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libtp3
+   </div>
+   <div id="projectbrief">Library for TTAK.KO-06.0288 Part 3</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>열거형 타입</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>열거형 멤버</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>매크로</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ttap3_gos.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ttap3__gos_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __LIB_TTA_P3_GOS_H__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __LIB_TTA_P3_GOS_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<a class="code" href="ttap3__gos_8h.html#ab958000d8a369986337f502b3095b28b">tp3_initgos</a> (<span class="keywordtype">int</span> gosid, <span class="keywordtype">int</span> *gcgids, <span class="keywordtype">int</span> numofgcgs);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="ttap3__gos_8h.html#a3dbe85e2ffe7577d0d142572d57df906">tp3_releasegos</a> ();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="ttap3__gos_8h.html#a25ffcedd0318b8f834a1abc0444b9ab0">tp3_acceptmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> pres, <span class="keywordtype">void</span> *data);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="ttap3__gos_8h.html#a4b1d631bc60689116489348aab5782b8">tp3_defaultconfirm</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> pres, <span class="keywordtype">void</span> *data);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="ttap3__gos_8h.html#a83ac6f8ee2f56bc2356985ad1fbc8321">tp3_stathistmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <a class="code" href="ttap3__define_8h.html#a183adea618b764ec937dfde7e19c35ef">tp3_hreq_t</a> reqtype, time_t stime, time_t etime);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="ttap3__gos_8h.html#ab92ade3f48e82f0ada3fd9c6bf777ff9">tp3_envhistmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <a class="code" href="ttap3__define_8h.html#a183adea618b764ec937dfde7e19c35ef">tp3_hreq_t</a> reqtype, time_t stime, time_t etime);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="ttap3__gos_8h.html#a1f304c66f5b75f697a336b477efa5d94">tp3_gcgconfmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="ttap3__gos_8h.html#af7d8f2660658bbfd3c4a66fa7c791020">tp3_snodeconfmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> snid);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="ttap3__gos_8h.html#a7808fcf0562f58762b8c17fdc543f75e">tp3_anodeconfmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> anid);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="ttap3__gos_8h.html#a7536f2783a11756f14580683c8a29706">tp3_gcgattrmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<a class="code" href="ttap3__gos_8h.html#a9a78c7557a2f7a7929a7ee7a204c52f7">tp3_senattrmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> snid, <span class="keywordtype">int</span> sid);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<a class="code" href="ttap3__gos_8h.html#a400cc10c497026e0aecb09785cef448d">tp3_actattrmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> anid, <span class="keywordtype">int</span> aid);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<a class="code" href="ttap3__gos_8h.html#a6adb201b90a85f0fe48f2eba72bf7a6a">tp3_senattrupdatemsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> snid, <span class="keywordtype">int</span> sid, <a class="code" href="ttap3__define_8h.html#a602c849cb97496076b15594e09e5bf68">tp3_sengathertype_t</a> gathertype, <span class="keywordtype">int</span> interval, <a class="code" href="ttap3__define_8h.html#a7f7a1a5f726084aee48ad3bf6f9260f5">tp3_senthrsdtype_t</a> thrsdtype, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<a class="code" href="ttap3__gos_8h.html#a519c0aeb42edaf6412567af2dd125774">tp3_actattrupdatemsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> anid, <span class="keywordtype">int</span> aid, <a class="code" href="ttap3__define_8h.html#adc664efa3dc540c15530ea7d9bcaacfc">tp3_actgathertype_t</a> gathertype, <span class="keywordtype">int</span> interval);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<a class="code" href="ttap3__gos_8h.html#a4ef5b9f2f74f469e7ed3cc72d568d874">tp3_faultmngmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <a class="code" href="ttap3__define_8h.html#ae38626521239da6b6ec8beb2570b740f">tp3_faultmng_t</a> fm);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<a class="code" href="ttap3__gos_8h.html#a8d5a073070b995d67e2a52fd492aebe7">tp3_actcontrolmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> *gaids, <span class="keywordtype">int</span> *values);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<a class="code" href="ttap3__gos_8h.html#a0b203f8db1b4648af0af75a259561fcc">tp3_envquerymsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> numofsens, <span class="keywordtype">int</span> *gsids, <span class="keywordtype">int</span> numofacts, <span class="keywordtype">int</span> *gaids);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<a class="code" href="ttap3__gos_8h.html#a80de3c15f3e52e79534dcc10c85c1d1f">tp3_statquerymsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> numofsn, <span class="keywordtype">int</span> *snids, <span class="keywordtype">int</span> numofsens, <span class="keywordtype">int</span> *gsids, <span class="keywordtype">int</span> numofan, <span class="keywordtype">int</span> *anids, <span class="keywordtype">int</span> numofacts, <span class="keywordtype">int</span> *gaids);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<a class="code" href="ttap3__gos_8h.html#a375369084a2fe9c9ec5f461561f9ac0c">tp3_parse_statmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <a class="code" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a> devtype, <span class="keywordtype">int</span> *num, <span class="keywordtype">int</span> *arrid, <span class="keywordtype">int</span> *arrval, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<a class="code" href="ttap3__gos_8h.html#a75bad839f5d0f28b5474f2d4cad8f51c">tp3_parse_envmsg</a> (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <a class="code" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a> devtype, <span class="keywordtype">int</span> *num, <span class="keywordtype">int</span> *arrid, <span class="keywordtype">int</span> *arrval, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ttap3__gos_8h_html_a9a78c7557a2f7a7929a7ee7a204c52f7"><div class="ttname"><a href="ttap3__gos_8h.html#a9a78c7557a2f7a7929a7ee7a204c52f7">tp3_senattrmsg</a></div><div class="ttdeci">tp3_stat_t tp3_senattrmsg(ptp3_msg_t preq, int gcgid, int snid, int sid)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:207</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a4b1d631bc60689116489348aab5782b8"><div class="ttname"><a href="ttap3__gos_8h.html#a4b1d631bc60689116489348aab5782b8">tp3_defaultconfirm</a></div><div class="ttdeci">tp3_stat_t tp3_defaultconfirm(ptp3_msg_t preq, ptp3_msg_t pres, void *data)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:72</div></div>
+<div class="ttc" id="structtp3__msg__t_html"><div class="ttname"><a href="structtp3__msg__t.html">tp3_msg_t</a></div><div class="ttdef"><b>Definition:</b> ttap3_base.h:121</div></div>
+<div class="ttc" id="ttap3__define_8h_html_a183adea618b764ec937dfde7e19c35ef"><div class="ttname"><a href="ttap3__define_8h.html#a183adea618b764ec937dfde7e19c35ef">tp3_hreq_t</a></div><div class="ttdeci">tp3_hreq_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:140</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a7536f2783a11756f14580683c8a29706"><div class="ttname"><a href="ttap3__gos_8h.html#a7536f2783a11756f14580683c8a29706">tp3_gcgattrmsg</a></div><div class="ttdeci">tp3_stat_t tp3_gcgattrmsg(ptp3_msg_t preq, int gcgid)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:198</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a6adb201b90a85f0fe48f2eba72bf7a6a"><div class="ttname"><a href="ttap3__gos_8h.html#a6adb201b90a85f0fe48f2eba72bf7a6a">tp3_senattrupdatemsg</a></div><div class="ttdeci">tp3_stat_t tp3_senattrupdatemsg(ptp3_msg_t preq, int gcgid, int snid, int sid, tp3_sengathertype_t gathertype, int interval, tp3_senthrsdtype_t thrsdtype, int value)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:229</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a80de3c15f3e52e79534dcc10c85c1d1f"><div class="ttname"><a href="ttap3__gos_8h.html#a80de3c15f3e52e79534dcc10c85c1d1f">tp3_statquerymsg</a></div><div class="ttdeci">tp3_stat_t tp3_statquerymsg(ptp3_msg_t preq, int gcgid, int numofsn, int *snids, int numofsens, int *gsids, int numofan, int *anids, int numofacts, int *gaids)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:297</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a375369084a2fe9c9ec5f461561f9ac0c"><div class="ttname"><a href="ttap3__gos_8h.html#a375369084a2fe9c9ec5f461561f9ac0c">tp3_parse_statmsg</a></div><div class="ttdeci">tp3_stat_t tp3_parse_statmsg(ptp3_msg_t preq, tp3_dev_t devtype, int *num, int *arrid, int *arrval, int len)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:79</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a4ef5b9f2f74f469e7ed3cc72d568d874"><div class="ttname"><a href="ttap3__gos_8h.html#a4ef5b9f2f74f469e7ed3cc72d568d874">tp3_faultmngmsg</a></div><div class="ttdeci">tp3_stat_t tp3_faultmngmsg(ptp3_msg_t preq, int gcgid, tp3_faultmng_t fm)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:262</div></div>
+<div class="ttc" id="ttap3__define_8h_html_a1bd7b391b44c2aa2f4d92192d7059cc5"><div class="ttname"><a href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div><div class="ttdeci">tp3_stat_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:147</div></div>
+<div class="ttc" id="ttap3__define_8h_html_adc664efa3dc540c15530ea7d9bcaacfc"><div class="ttname"><a href="ttap3__define_8h.html#adc664efa3dc540c15530ea7d9bcaacfc">tp3_actgathertype_t</a></div><div class="ttdeci">tp3_actgathertype_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:255</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a1f304c66f5b75f697a336b477efa5d94"><div class="ttname"><a href="ttap3__gos_8h.html#a1f304c66f5b75f697a336b477efa5d94">tp3_gcgconfmsg</a></div><div class="ttdeci">tp3_stat_t tp3_gcgconfmsg(ptp3_msg_t preq, int gcgid)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:170</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_af7d8f2660658bbfd3c4a66fa7c791020"><div class="ttname"><a href="ttap3__gos_8h.html#af7d8f2660658bbfd3c4a66fa7c791020">tp3_snodeconfmsg</a></div><div class="ttdeci">tp3_stat_t tp3_snodeconfmsg(ptp3_msg_t preq, int gcgid, int snid)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:179</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a3dbe85e2ffe7577d0d142572d57df906"><div class="ttname"><a href="ttap3__gos_8h.html#a3dbe85e2ffe7577d0d142572d57df906">tp3_releasegos</a></div><div class="ttdeci">void tp3_releasegos()</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:43</div></div>
+<div class="ttc" id="ttap3__define_8h_html_abbf17c84f49db2117c19c0622fbdda5f"><div class="ttname"><a href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a></div><div class="ttdeci">tp3_dev_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:262</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a25ffcedd0318b8f834a1abc0444b9ab0"><div class="ttname"><a href="ttap3__gos_8h.html#a25ffcedd0318b8f834a1abc0444b9ab0">tp3_acceptmsg</a></div><div class="ttdeci">tp3_stat_t tp3_acceptmsg(ptp3_msg_t preq, ptp3_msg_t pres, void *data)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:65</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a0b203f8db1b4648af0af75a259561fcc"><div class="ttname"><a href="ttap3__gos_8h.html#a0b203f8db1b4648af0af75a259561fcc">tp3_envquerymsg</a></div><div class="ttdeci">tp3_stat_t tp3_envquerymsg(ptp3_msg_t preq, int gcgid, int numofsens, int *gsids, int numofacts, int *gaids)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:284</div></div>
+<div class="ttc" id="ttap3__define_8h_html_ae38626521239da6b6ec8beb2570b740f"><div class="ttname"><a href="ttap3__define_8h.html#ae38626521239da6b6ec8beb2570b740f">tp3_faultmng_t</a></div><div class="ttdeci">tp3_faultmng_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:173</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a8d5a073070b995d67e2a52fd492aebe7"><div class="ttname"><a href="ttap3__gos_8h.html#a8d5a073070b995d67e2a52fd492aebe7">tp3_actcontrolmsg</a></div><div class="ttdeci">tp3_stat_t tp3_actcontrolmsg(ptp3_msg_t preq, int gcgid, int length, int *gaids, int *values)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:272</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a83ac6f8ee2f56bc2356985ad1fbc8321"><div class="ttname"><a href="ttap3__gos_8h.html#a83ac6f8ee2f56bc2356985ad1fbc8321">tp3_stathistmsg</a></div><div class="ttdeci">tp3_stat_t tp3_stathistmsg(ptp3_msg_t preq, int gcgid, tp3_hreq_t reqtype, time_t stime, time_t etime)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:144</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a75bad839f5d0f28b5474f2d4cad8f51c"><div class="ttname"><a href="ttap3__gos_8h.html#a75bad839f5d0f28b5474f2d4cad8f51c">tp3_parse_envmsg</a></div><div class="ttdeci">tp3_stat_t tp3_parse_envmsg(ptp3_msg_t preq, tp3_dev_t devtype, int *num, int *arrid, int *arrval, int len)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:116</div></div>
+<div class="ttc" id="ttap3__define_8h_html_a602c849cb97496076b15594e09e5bf68"><div class="ttname"><a href="ttap3__define_8h.html#a602c849cb97496076b15594e09e5bf68">tp3_sengathertype_t</a></div><div class="ttdeci">tp3_sengathertype_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:223</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_ab92ade3f48e82f0ada3fd9c6bf777ff9"><div class="ttname"><a href="ttap3__gos_8h.html#ab92ade3f48e82f0ada3fd9c6bf777ff9">tp3_envhistmsg</a></div><div class="ttdeci">tp3_stat_t tp3_envhistmsg(ptp3_msg_t preq, int gcgid, tp3_hreq_t reqtype, time_t stime, time_t etime)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:157</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_ab958000d8a369986337f502b3095b28b"><div class="ttname"><a href="ttap3__gos_8h.html#ab958000d8a369986337f502b3095b28b">tp3_initgos</a></div><div class="ttdeci">void tp3_initgos(int gosid, int *gcgids, int numofgcgs)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:29</div></div>
+<div class="ttc" id="ttap3__define_8h_html_a7f7a1a5f726084aee48ad3bf6f9260f5"><div class="ttname"><a href="ttap3__define_8h.html#a7f7a1a5f726084aee48ad3bf6f9260f5">tp3_senthrsdtype_t</a></div><div class="ttdeci">tp3_senthrsdtype_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:231</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a519c0aeb42edaf6412567af2dd125774"><div class="ttname"><a href="ttap3__gos_8h.html#a519c0aeb42edaf6412567af2dd125774">tp3_actattrupdatemsg</a></div><div class="ttdeci">tp3_stat_t tp3_actattrupdatemsg(ptp3_msg_t preq, int gcgid, int anid, int aid, tp3_actgathertype_t gathertype, int interval)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:247</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a400cc10c497026e0aecb09785cef448d"><div class="ttname"><a href="ttap3__gos_8h.html#a400cc10c497026e0aecb09785cef448d">tp3_actattrmsg</a></div><div class="ttdeci">tp3_stat_t tp3_actattrmsg(ptp3_msg_t preq, int gcgid, int anid, int aid)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:218</div></div>
+<div class="ttc" id="ttap3__gos_8h_html_a7808fcf0562f58762b8c17fdc543f75e"><div class="ttname"><a href="ttap3__gos_8h.html#a7808fcf0562f58762b8c17fdc543f75e">tp3_anodeconfmsg</a></div><div class="ttdeci">tp3_stat_t tp3_anodeconfmsg(ptp3_msg_t preq, int gcgid, int anid)</div><div class="ttdef"><b>Definition:</b> ttap3_gos.c:189</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 목 11월 17 2016 10:46:00, 프로젝트명 : libtp3, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

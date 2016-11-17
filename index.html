@@ -39,6 +39,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>메인&#160;페이지</span></a></li>
       <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li><a href="files.html"><span>파일들</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -63,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>열거형 타입</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>열거형 멤버</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>매크로</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,26 +91,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
 </ul>
 <h1>Implementation</h1>
 <h2>Data structures</h2>
-<p>libtp3 는 크게 2가지 메세지 표현을 위한 자료구조를 가지고 있다. 하나는 실제 통신에서 사용할 byte의 배열에 해당하는 자료구조로 tp3_frame_t 타입으로 표현되는 것이고, 다른 하나는 프로그램 코드상에서 메세지에 쉽게 접근할 수 있도록 돕는 자료구조로 tp3_msg_t 타입이다.</p>
-<h3>tp3_frame_t</h3>
-<p><a href="http://www.tta.or.kr/data/ttas_view.jsp?rn=1&amp;pk_num=TTAK.KO-06.0288-Part3">TTAK.KO-06.0288/R1 Part 3 표준</a>에서는 메세지 프레임이 3가지 값(길이, 데이터, 체크섬)으로 구성된다. 길이는 4byte 정수이며, 데이터의 길이와 체크섬 2바이트를 합친 길이이다. 체크섬은 데이터의 바이트 단위 값을 XOR 한 값을 2byte로 표현한 것이다. 데이터는 다수의 필드로 구성되는데, 개별 필드 역시 3가지 값(필드코드, 필드길이, 필드데이터)으로 구성된다. 필드코드는 2byte 로 부여되는 값으로 tp3_fieldcode_t 으로 정의된다. 필드길이는 2byte 정수형으로 필드데이터의 길이를 나타낸다. 필드데이터는 필드코드에 따라 길이가 고정되지만 몇몇 필드에 있어서는 동적으로 길이가 결정된다.</p>
-<h3>tp3_msg_t</h3>
-<p>tp3_msg_t 타입은 tp3_frame_t로 표현되는 메세지 프레임을 프로그램 코드상에서 쉽게 접근할 수 있도록 파싱한 결과값이라고 할 수 있다. 고정헤더필드와 가변필드로 구성된다. 고정헤더필드는 tp3_header_t로 표현되며, 가변필드는 tp3_field_t의 배열로 표현된다.</p>
+<p>libtp3 는 크게 2가지 메세지 표현을 위한 자료구조를 가지고 있다. 하나는 실제 통신에서 사용할 byte의 배열에 해당하는 자료구조로 <a class="el" href="structtp3__frame__t.html">tp3_frame_t</a> 타입으로 표현되는 것이고, 다른 하나는 프로그램 코드상에서 메세지에 쉽게 접근할 수 있도록 돕는 자료구조로 <a class="el" href="structtp3__msg__t.html">tp3_msg_t</a> 타입이다.</p>
+<h3><a class="el" href="structtp3__frame__t.html">tp3_frame_t</a></h3>
+<p><a href="http://www.tta.or.kr/data/ttas_view.jsp?rn=1&amp;pk_num=TTAK.KO-06.0288-Part3">TTAK.KO-06.0288/R1 Part 3 표준</a>에서는 메세지 프레임이 3가지 값(길이, 데이터, 체크섬)으로 구성된다. 길이는 4byte 정수이며, 데이터의 길이와 체크섬 2바이트를 합친 길이이다. 체크섬은 데이터의 바이트 단위 값을 XOR 한 값을 2byte로 표현한 것이다. 데이터는 다수의 필드로 구성되는데, 개별 필드 역시 3가지 값(필드코드, 필드길이, 필드데이터)으로 구성된다. 필드코드는 2byte 로 부여되는 값으로 <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> 으로 정의된다. 필드길이는 2byte 정수형으로 필드데이터의 길이를 나타낸다. 필드데이터는 필드코드에 따라 길이가 고정되지만 몇몇 필드에 있어서는 동적으로 길이가 결정된다.</p>
+<h3><a class="el" href="structtp3__msg__t.html">tp3_msg_t</a></h3>
+<p><a class="el" href="structtp3__msg__t.html">tp3_msg_t</a> 타입은 <a class="el" href="structtp3__frame__t.html">tp3_frame_t</a>로 표현되는 메세지 프레임을 프로그램 코드상에서 쉽게 접근할 수 있도록 파싱한 결과값이라고 할 수 있다. 고정헤더필드와 가변필드로 구성된다. 고정헤더필드는 <a class="el" href="structtp3__header__t.html">tp3_header_t</a>로 표현되며, 가변필드는 <a class="el" href="structtp3__field__t.html">tp3_field_t</a>의 배열로 표현된다.</p>
 <h2>Translation</h2>
-<p>tp3_frame_t 와 tp3_msg_t 간의 전환은 두 함수 tp3_parseframe 과 tp3_generateframe 으로 이루어진다. tp3_parseframe 함수는 tp3_frame_t 을 tp3_msg_t 으로 파싱해주는 역할을 수행하며, tp3_generateframe 함수는 tp3_msg_t을 이용하여 tp3_frame_t 를 생성해주는 역할을 수행한다.</p>
+<p><a class="el" href="structtp3__frame__t.html">tp3_frame_t</a> 와 <a class="el" href="structtp3__msg__t.html">tp3_msg_t</a> 간의 전환은 두 함수 <a class="el" href="ttap3__base_8c.html#a6746c95b75f13efcc2f84090cb138b64">tp3_parseframe</a> 과 <a class="el" href="ttap3__base_8c.html#a0c6b2d1e19b9b437fea32fdab139d49f">tp3_generateframe</a> 으로 이루어진다. <a class="el" href="ttap3__base_8c.html#a6746c95b75f13efcc2f84090cb138b64">tp3_parseframe</a> 함수는 <a class="el" href="structtp3__frame__t.html">tp3_frame_t</a> 을 <a class="el" href="structtp3__msg__t.html">tp3_msg_t</a> 으로 파싱해주는 역할을 수행하며, <a class="el" href="ttap3__base_8c.html#a0c6b2d1e19b9b437fea32fdab139d49f">tp3_generateframe</a> 함수는 <a class="el" href="structtp3__msg__t.html">tp3_msg_t</a>을 이용하여 <a class="el" href="structtp3__frame__t.html">tp3_frame_t</a> 를 생성해주는 역할을 수행한다.</p>
 <h2>Request Message Creation</h2>
 <p><a href="http://www.tta.or.kr/data/ttas_view.jsp?rn=1&amp;pk_num=TTAK.KO-06.0288-Part3">TTAK.KO-06.0288/R1 Part 3 표준</a> 에는 12가지 형식의 메세지가 정의되어 있다. 대부분의 메세지는 요청, 응답형식의 메세지로, 메세지의 종류에 따라 운영시스템 혹은 통합제어기 측에서 전송을 시작하게 된다. 통합제어기에서 전송할 수 있는 메세지는 4종이며, 운영시스템에서 전송할 수 있는 메세지는 8종이다. 각 메세지의 생성을 위해서는 다음의 메세지 생성 함수를 활용할 수 있다.</p>
 <h3>통합제어기</h3>
 <ul>
-<li>연결요청 : tp3_connectmsg</li>
-<li>네트워크 체크 : tp3_keepalivemsg</li>
-<li>상태정보 알림 : tp3_notifystatmsg</li>
-<li>환경정보 알림 : tp3_notifyenvmsg</li>
+<li>연결요청 : <a class="el" href="ttap3__gcg_8c.html#af1542bbb08f77a0a13e72dfe1c950844">tp3_connectmsg</a></li>
+<li>네트워크 체크 : <a class="el" href="ttap3__gcg_8c.html#ac91877b36a1a5461f2f16db267ed0ebe">tp3_keepalivemsg</a></li>
+<li>상태정보 알림 : <a class="el" href="ttap3__gcg_8c.html#a0903d0adc772d9ad37bbd363ccc2fd0d">tp3_notifystatmsg</a></li>
+<li>환경정보 알림 : <a class="el" href="ttap3__gcg_8c.html#aee0c5e88f7beb56fdb9a6fb4ac3bd3e0">tp3_notifyenvmsg</a></li>
 </ul>
 <h3>운영시스템</h3>
 <ul>
-<li>상태정보 이력 : tp3_stathistmsg</li>
-<li>환경정보 이력 : tp3_envhistmsg</li>
+<li>상태정보 이력 : <a class="el" href="ttap3__gos_8h.html#a83ac6f8ee2f56bc2356985ad1fbc8321">tp3_stathistmsg</a></li>
+<li>환경정보 이력 : <a class="el" href="ttap3__gos_8h.html#ab92ade3f48e82f0ada3fd9c6bf777ff9">tp3_envhistmsg</a></li>
 <li>프로파일 조회 : tp3_gcgconf, tp3_snodeconf, tp3_anodeconf, tp3_gcgattr, tp3_senattr, tp3_actattr</li>
 <li>프로파일 설정 : tp3_senattrupdate, tp3_actattrupdate</li>
 <li>장애 관리 : tp3_faultmng</li>
@@ -119,25 +121,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
 <h2>Response Message</h2>
 <p>위의 메세지 생성함수에서 생성된 메세지는 2가지 방식으로 처리될 수 있다. 하나는 콜백함수를 사용하는 것이고, 다른 하나는 직접 메세지를 파싱하고, 처리하여 응답메세지를 만드는 방법이다. 콜백함수를 사용하는 경우 해당 메세지에 대한 직접적인 처리만을 수행할 수 있기 때문에 더 편하다. 직접 메세지를 처리하는 것은 특별한 이유가 있지 않는 한 권장하지 않는다.</p>
 <h3>콜백 함수의 사용</h3>
-<p>메세지 처리를 위한 콜백함수는 다음과 같이 정의된다. </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> tp3_stat_t </div>
-<div class="line">(*ptp3_rescb_t) (ptp3_msg_t preq, ptp3_msg_t pres, <span class="keywordtype">void</span> *data);</div>
-</div><!-- fragment --><p> preq는 요청메세지에 대한 포인터이고, pres는 생성할 응답메세지에 대한 포인터 이다. data는 사용자 정의 데이터에 대한 포인터로 사용자가 사전에 등록해 놓은 포인터를 전달한다. 콜백함수는 tp3_registcbfunc를 통해서 등록할 수 있으며, 이때 사용자 정의 데이터도 등록이 가능하다.</p>
+<p>메세지 처리를 위한 콜백함수는 다음과 같이 정의된다. </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> <a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> </div>
+<div class="line">(*<a class="code" href="ttap3__process_8h.html#a23718e3cf9605f7318db784f3c0c0eeb">ptp3_rescb_t</a>) (<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a> pres, <span class="keywordtype">void</span> *data);</div>
+</div><!-- fragment --><p> preq는 요청메세지에 대한 포인터이고, pres는 생성할 응답메세지에 대한 포인터 이다. data는 사용자 정의 데이터에 대한 포인터로 사용자가 사전에 등록해 놓은 포인터를 전달한다. 콜백함수는 <a class="el" href="ttap3__process_8c.html#ab3d1e71ea271c2e17801eca475a6190e">tp3_registcbfunc</a>를 통해서 등록할 수 있으며, 이때 사용자 정의 데이터도 등록이 가능하다.</p>
 <h3>요청 메세지의 전/후처리</h3>
-<p>요청 메세지를 tp3_frame_t 형식으로 전달받게 되면, 해당 변수를 tp3_msg_t 형식으로 파싱한다. 파싱된 메세지를 이용하여 응답 메세지 헤더를 설정할 수 있고, 메세지를 처리한뒤, 응답코드를 설정한 tp3_msg_t 형식의 변수를 만든다. tp3_msg_t 타입의 응답 메세지를 이용하여 tp3_frame_t 형식의 메세지를 생성하면 요청메세지에 대한 처리가 완료된다. 이를 코드로 정리하면 다음과 같다.</p>
-<div class="fragment"><div class="line">tp3_frame_t frame;</div>
-<div class="line">tp3_msg_t req, res;</div>
-<div class="line">tp3_stat_t stat;</div>
+<p>요청 메세지를 <a class="el" href="structtp3__frame__t.html">tp3_frame_t</a> 형식으로 전달받게 되면, 해당 변수를 <a class="el" href="structtp3__msg__t.html">tp3_msg_t</a> 형식으로 파싱한다. 파싱된 메세지를 이용하여 응답 메세지 헤더를 설정할 수 있고, 메세지를 처리한뒤, 응답코드를 설정한 <a class="el" href="structtp3__msg__t.html">tp3_msg_t</a> 형식의 변수를 만든다. <a class="el" href="structtp3__msg__t.html">tp3_msg_t</a> 타입의 응답 메세지를 이용하여 <a class="el" href="structtp3__frame__t.html">tp3_frame_t</a> 형식의 메세지를 생성하면 요청메세지에 대한 처리가 완료된다. 이를 코드로 정리하면 다음과 같다.</p>
+<div class="fragment"><div class="line"><a class="code" href="structtp3__frame__t.html">tp3_frame_t</a> frame;</div>
+<div class="line"><a class="code" href="structtp3__msg__t.html">tp3_msg_t</a> req, res;</div>
+<div class="line"><a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> stat;</div>
 <div class="line"></div>
 <div class="line">.....</div>
 <div class="line"></div>
 <div class="line">tp3_parseframe (&amp;frame, &amp;req);</div>
 <div class="line"></div>
-<div class="line">tp3_initmsg (&amp;res);</div>
+<div class="line"><a class="code" href="ttap3__base_8h.html#aeb758df84ce002d2f4c895b639b2108d">tp3_initmsg</a> (&amp;res);</div>
 <div class="line"></div>
 <div class="line">stat = tp3_executecallback (&amp;req, &amp;res);</div>
-<div class="line">tp3_setresponse (&amp;req, &amp;res, stat);</div>
+<div class="line"><a class="code" href="ttap3__base_8h.html#adaefc3e5e0599a6014a4956bdec238a8">tp3_setresponse</a> (&amp;req, &amp;res, stat);</div>
 <div class="line"></div>
-<div class="line">tp3_generateframe (&amp;res, &amp;frame);</div>
+<div class="line"><a class="code" href="ttap3__base_8h.html#a0c6b2d1e19b9b437fea32fdab139d49f">tp3_generateframe</a> (&amp;res, &amp;frame);</div>
 <div class="line">.....</div>
 </div><!-- fragment --><h1>Device Type</h1>
 <p><a href="http://www.tta.or.kr/data/ttas_view.jsp?rn=1&amp;pk_num=TTAK.KO-06.0288-Part3">TTAK.KO-06.0288/R1 Part 3 표준</a>에서는 센서의 타입이나 제어기의 타입을 정의하고 있지 않다. libtp3 에서는 다음과 같이 센서와 제어기의 타입을 정의하여 사용하고 있다.</p>
@@ -220,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-생성시간 : 목 11월 17 2016 10:37:29, 프로젝트명 : libtp3, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+생성시간 : 목 11월 17 2016 10:46:00, 프로젝트명 : libtp3, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

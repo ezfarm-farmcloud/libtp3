@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>libtp3: 관련된 페이지</title>
+<title>libtp3: include/ttap3_config.h 파일 참조</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,9 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
-      <li class="current"><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
       <li><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
-      <li><a href="files.html"><span>파일들</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -59,7 +59,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
       </li>
     </ul>
   </div>
-</div><!-- top -->
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -74,19 +79,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">매크로</a>  </div>
   <div class="headertitle">
-<div class="title">관련된 페이지</div>  </div>
+<div class="title">ttap3_config.h 파일 참조</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">다음은 관련된 모든 문서화 페이지들의 목록입니다.:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_README.html" target="_self">libtp3 : A library for TTAK.KO-06.0288 Part 3</a></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_doc_8src_ttap3_analysis.html" target="_self">TTAK.KO-06.0288 Part 3 분석 결과		{ttap3analysis}</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="P3R1analysis.html" target="_self">TTAK.KO-06.0288/R1 Part 3 분석 결과</a></td><td class="desc"></td></tr>
+
+<p>libtp3 구동을 위해 변경할 수 있는 설정값 정의  
+<a href="#details">더 자세히 ...</a></p>
+
+<p><a href="ttap3__config_8h_source.html">이 파일의 소스 코드 페이지로 가기</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+매크로</h2></td></tr>
+<tr class="memitem:a33351fdd5e9dc5c8f672ca52cbd77bdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33351fdd5e9dc5c8f672ca52cbd77bdd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_TP3_MAX_GCG</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a33351fdd5e9dc5c8f672ca52cbd77bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d75aa53923b1f286714736c29d8a6b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d75aa53923b1f286714736c29d8a6b6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_TP3_MAX_DEVICES</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a0d75aa53923b1f286714736c29d8a6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f8273614e10a0e6cd49d1512af2e6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40f8273614e10a0e6cd49d1512af2e6e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_TP3_BUFSIZE</b>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:a40f8273614e10a0e6cd49d1512af2e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a684f6c44ee14a730977a5d503a9f1e6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a684f6c44ee14a730977a5d503a9f1e6c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_TP3_FIELD_STEP</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a684f6c44ee14a730977a5d503a9f1e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2749317bb25006964257d4b45a37f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f2749317bb25006964257d4b45a37f3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_TP3_FDATA_LIMIT</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a3f2749317bb25006964257d4b45a37f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>libtp3 구동을 위해 변경할 수 있는 설정값 정의 </p>
+<p>Copyright © 2015-2016 ezfarm Co., Ltd. All Rights Reserved.</p>
+<p>libtp3에서 사용하는 버퍼의 크기등을 정의하고 있는 파일 </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 생성시간 : 목 11월 17 2016 10:46:00, 프로젝트명 : libtp3, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">

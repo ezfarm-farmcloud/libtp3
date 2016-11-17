@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>libtp3: 관련된 페이지</title>
+<title>libtp3: tp3_block_t 구조체 참조</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,8 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
-      <li class="current"><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
-      <li><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li class="current"><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
       <li><a href="files.html"><span>파일들</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -59,7 +59,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
       </li>
     </ul>
   </div>
-</div><!-- top -->
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li><a href="classes.html"><span>데이타&#160;구조&#160;색인</span></a></li>
+      <li><a href="functions.html"><span>데이타&#160;필드</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -74,18 +80,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">데이타 필드</a>  </div>
   <div class="headertitle">
-<div class="title">관련된 페이지</div>  </div>
+<div class="title">tp3_block_t 구조체 참조</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">다음은 관련된 모든 문서화 페이지들의 목록입니다.:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_README.html" target="_self">libtp3 : A library for TTAK.KO-06.0288 Part 3</a></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_doc_8src_ttap3_analysis.html" target="_self">TTAK.KO-06.0288 Part 3 분석 결과		{ttap3analysis}</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="P3R1analysis.html" target="_self">TTAK.KO-06.0288/R1 Part 3 분석 결과</a></td><td class="desc"></td></tr>
+
+<p><code>#include &lt;<a class="el" href="ttap3__util_8h_source.html">ttap3_util.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+데이타 필드</h2></td></tr>
+<tr class="memitem:a1ba626f5b7496dc2b5726bdb2b4e9e5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ba626f5b7496dc2b5726bdb2b4e9e5e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rows</b></td></tr>
+<tr class="separator:a1ba626f5b7496dc2b5726bdb2b4e9e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedaf4ed738386bcb3fb03930cabc5389"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedaf4ed738386bcb3fb03930cabc5389"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>numofdev</b> [_TP3_NUMOFBLKDATA]</td></tr>
+<tr class="separator:aedaf4ed738386bcb3fb03930cabc5389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24bba30ce541bd364dbc3fa8dc9c4e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac24bba30ce541bd364dbc3fa8dc9c4e2"></a>
+<a class="el" href="structtp3__blockitem__t.html">ptp3_blockitem_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pitems</b></td></tr>
+<tr class="separator:ac24bba30ce541bd364dbc3fa8dc9c4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2e43bf5392060b0b095647363e0a9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf2e43bf5392060b0b095647363e0a9d"></a>
+<a class="el" href="structtp3__blockitem__t.html">ptp3_blockitem_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pcuritem</b></td></tr>
+<tr class="separator:adf2e43bf5392060b0b095647363e0a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d06cfc54e9fec11b20ddfe99c4a7c0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d06cfc54e9fec11b20ddfe99c4a7c0a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>itemidx</b> [_TP3_NUMOFBLKDATA]</td></tr>
+<tr class="separator:a3d06cfc54e9fec11b20ddfe99c4a7c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>상태정보이력조회 혹은 환경정보이력조회의 결과블럭을 만들기 위한 구조체 </p>
+</div><hr/>이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>include/<a class="el" href="ttap3__util_8h_source.html">ttap3_util.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

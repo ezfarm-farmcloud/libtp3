@@ -1,0 +1,1031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>libtp3: src/ttap3_base.c 파일 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libtp3
+   </div>
+   <div id="projectbrief">Library for TTAK.KO-06.0288 Part 3</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>열거형 타입</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>열거형 멤버</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>매크로</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">ttap3_base.c 파일 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TTAK.KO-06.0288 Part 3 를 구현한 라이브러리 베이스  
+<a href="#details">더 자세히 ...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="ttap3__define_8h_source.html">ttap3_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ttap3__config_8h_source.html">ttap3_config.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ttap3__base_8h_source.html">ttap3_base.h</a>&gt;</code><br />
+<code>#include &lt;../util/mem.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:af230b7055e577b15fecfc317167a2dbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#af230b7055e577b15fecfc317167a2dbb">tp3_getframesize</a> (<a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a> pframe)</td></tr>
+<tr class="separator:af230b7055e577b15fecfc317167a2dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1f655d0237ed03da7e45b13b5761d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#ade1f655d0237ed03da7e45b13b5761d0">tp3_writeframe</a> (<a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a> pframe, byte *buf, int len)</td></tr>
+<tr class="separator:ade1f655d0237ed03da7e45b13b5761d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630d40391338335dadc79f348bc26fe8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a630d40391338335dadc79f348bc26fe8">tp3_readframe</a> (<a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a> pframe, byte *buf, int len)</td></tr>
+<tr class="separator:a630d40391338335dadc79f348bc26fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55dd0b9683305bb41b8245a7afd4b4c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55dd0b9683305bb41b8245a7afd4b4c9"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_calculatechecksum</b> (<a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a> pframe)</td></tr>
+<tr class="separator:a55dd0b9683305bb41b8245a7afd4b4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb98e0daee14e35b986d0ac21fcca4b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb98e0daee14e35b986d0ac21fcca4b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_setheadertoframedata</b> (<a class="el" href="structtp3__header__t.html">ptp3_header_t</a> pheader, void *data)</td></tr>
+<tr class="separator:abb98e0daee14e35b986d0ac21fcca4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f8e9913473be7b503fca9b88aa29d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65f8e9913473be7b503fca9b88aa29d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_copynbyte</b> (byte *pdest, int *psrc, int base, int destlen)</td></tr>
+<tr class="separator:a65f8e9913473be7b503fca9b88aa29d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0119802a47741713c9c1b076676bf45f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0119802a47741713c9c1b076676bf45f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_getfieldlen</b> (<a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code)</td></tr>
+<tr class="separator:a0119802a47741713c9c1b076676bf45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ccbbcf9b69085a66be6a359c8c0387"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52ccbbcf9b69085a66be6a359c8c0387"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_setfieldstoframedata</b> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, void *data)</td></tr>
+<tr class="separator:a52ccbbcf9b69085a66be6a359c8c0387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6b2d1e19b9b437fea32fdab139d49f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a0c6b2d1e19b9b437fea32fdab139d49f">tp3_generateframe</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a> pframe)</td></tr>
+<tr class="separator:a0c6b2d1e19b9b437fea32fdab139d49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3dfd6ef572814fe8f5f84fbc5f8f5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a6a3dfd6ef572814fe8f5f84fbc5f8f5e">tp3_readnum</a> (byte *pbyte, int len)</td></tr>
+<tr class="separator:a6a3dfd6ef572814fe8f5f84fbc5f8f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f0e00b076086416e831bce953fe045"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08f0e00b076086416e831bce953fe045"></a>
+<a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_addfield_array</b> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, int basesize, int length, byte *ptr)</td></tr>
+<tr class="separator:a08f0e00b076086416e831bce953fe045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6746c95b75f13efcc2f84090cb138b64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a6746c95b75f13efcc2f84090cb138b64">tp3_parseframe</a> (<a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a> pframe, <a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg)</td></tr>
+<tr class="separator:a6746c95b75f13efcc2f84090cb138b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ea6d738edf6de4d36fe353a160d012"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a13ea6d738edf6de4d36fe353a160d012">tp3_releasemsg</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg)</td></tr>
+<tr class="separator:a13ea6d738edf6de4d36fe353a160d012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf30236a3efff225b5097136365fda8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a3bf30236a3efff225b5097136365fda8">tp3_releaseframe</a> (<a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a> pframe)</td></tr>
+<tr class="separator:a3bf30236a3efff225b5097136365fda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21965a1aee21ac1d517548f38b66c2a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21965a1aee21ac1d517548f38b66c2a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_addheaderfield</b> (<a class="el" href="structtp3__header__t.html">ptp3_header_t</a> pheader, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, int length, <a class="el" href="uniontp3__fdata__t.html">ptp3_fdata_t</a> pdata)</td></tr>
+<tr class="separator:a21965a1aee21ac1d517548f38b66c2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba204bb3d624d984dc997e63c30a757"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ba204bb3d624d984dc997e63c30a757"></a>
+<a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_extendfields</b> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg)</td></tr>
+<tr class="separator:a0ba204bb3d624d984dc997e63c30a757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5da1adcfe2538236ab97f6c957c228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a4a5da1adcfe2538236ab97f6c957c228">tp3_addfield</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, int length, <a class="el" href="uniontp3__fdata__t.html">ptp3_fdata_t</a> data)</td></tr>
+<tr class="separator:a4a5da1adcfe2538236ab97f6c957c228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b122ca57bffa57244408dbf7903ab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#ab8b122ca57bffa57244408dbf7903ab5">tp3_addfield_num</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, int data)</td></tr>
+<tr class="separator:ab8b122ca57bffa57244408dbf7903ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb83bf1467b521ad5fc37d0309488865"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#afb83bf1467b521ad5fc37d0309488865">tp3_addfield_bytes</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, byte *ptr)</td></tr>
+<tr class="separator:afb83bf1467b521ad5fc37d0309488865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9382f519df23ce55b2d28fd557495602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a9382f519df23ce55b2d28fd557495602">tp3_addfield_nbytes</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, int length, byte *ptr)</td></tr>
+<tr class="separator:a9382f519df23ce55b2d28fd557495602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b9eeb61b540f8cc2116a8d1f048a59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a72b9eeb61b540f8cc2116a8d1f048a59">tp3_setheader</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a459a2e8971a9a925cc47d302dcc0f623">tp3_msgtype_t</a> msgtype, <a class="el" href="ttap3__define_8h.html#a56b21d4dc9a4b8ac0f80f7d330679db9">tp3_transtype_t</a> transtype, int gcgid, int gosid, int msgseq)</td></tr>
+<tr class="separator:a72b9eeb61b540f8cc2116a8d1f048a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb758df84ce002d2f4c895b639b2108d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#aeb758df84ce002d2f4c895b639b2108d">tp3_initmsg</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg)</td></tr>
+<tr class="separator:aeb758df84ce002d2f4c895b639b2108d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305861fd012c76a40fbf2990944d60c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a305861fd012c76a40fbf2990944d60c5">tp3_initframe</a> (<a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a> pframe)</td></tr>
+<tr class="separator:a305861fd012c76a40fbf2990944d60c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd9aa54ec856ad8714f3b936cc6067d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a1fd9aa54ec856ad8714f3b936cc6067d">tp3_readfieldlen</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code)</td></tr>
+<tr class="separator:a1fd9aa54ec856ad8714f3b936cc6067d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931e43e69078bddc47d6c428f7d4d8b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a931e43e69078bddc47d6c428f7d4d8b1">tp3_isnumberinfield</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code)</td></tr>
+<tr class="separator:a931e43e69078bddc47d6c428f7d4d8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18bc4ddb8ae1d26816232562a2485aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#ae18bc4ddb8ae1d26816232562a2485aa">tp3_readfield</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, <a class="el" href="uniontp3__fdata__t.html">ptp3_fdata_t</a> pdata)</td></tr>
+<tr class="separator:ae18bc4ddb8ae1d26816232562a2485aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f81595753dbb8d7cecf19a4abfcb2f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a5f81595753dbb8d7cecf19a4abfcb2f3">tp3_readfield_num</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, int *pdata)</td></tr>
+<tr class="separator:a5f81595753dbb8d7cecf19a4abfcb2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768e588670939ac305a71dbcabaf53d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a768e588670939ac305a71dbcabaf53d4">tp3_printmsg</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg)</td></tr>
+<tr class="separator:a768e588670939ac305a71dbcabaf53d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c0a1afabda777aed97749c62b40890"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a12c0a1afabda777aed97749c62b40890">tp3_printframe</a> (<a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a> pframe)</td></tr>
+<tr class="separator:a12c0a1afabda777aed97749c62b40890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037e540026b768f1e1b6d9402b5e4bbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a037e540026b768f1e1b6d9402b5e4bbd">tp3_printerror</a> (<a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> stat)</td></tr>
+<tr class="separator:a037e540026b768f1e1b6d9402b5e4bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706cd7289a53f8840f2ed474d1f98e9f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#a706cd7289a53f8840f2ed474d1f98e9f">tp3_geterrormsg</a> (<a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> stat)</td></tr>
+<tr class="separator:a706cd7289a53f8840f2ed474d1f98e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0887a5f33018e448c78e065603fc1da5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0887a5f33018e448c78e065603fc1da5"></a>
+<a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_setrescode</b> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pres, <a class="el" href="ttap3__define_8h.html#a8df3dbbb5ea43ac61fd7457c8841efbf">tp3_rescode_t</a> rescode)</td></tr>
+<tr class="separator:a0887a5f33018e448c78e065603fc1da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaefc3e5e0599a6014a4956bdec238a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__base_8c.html#adaefc3e5e0599a6014a4956bdec238a8">tp3_setresponse</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> preq, <a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pres, <a class="el" href="ttap3__define_8h.html#a8df3dbbb5ea43ac61fd7457c8841efbf">tp3_rescode_t</a> rescode)</td></tr>
+<tr class="separator:adaefc3e5e0599a6014a4956bdec238a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>TTAK.KO-06.0288 Part 3 를 구현한 라이브러리 베이스 </p>
+<p>Copyright © 2015-2016 ezfarm Co., Ltd. All Rights Reserved.</p>
+<p>TTA Part 3 라이브러리 베이스에서는 실제 전송되는 데이터와 프로그램상에서 사용하는 메세지의 구조체를 상호변환 해주기 위한 코드를 담고 있다. </p>
+</div><h2 class="groupheader">함수 문서화</h2>
+<a class="anchor" id="a4a5da1adcfe2538236ab97f6c957c228"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfield </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="uniontp3__fdata__t.html">ptp3_fdata_t</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지에 필드를 추가한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>타겟 메세지 </td></tr>
+    <tr><td class="paramname">code</td><td>추가할 필드코드 </td></tr>
+    <tr><td class="paramname">length</td><td>추가할 필드데이터의 길이 </td></tr>
+    <tr><td class="paramname">data</td><td>추가할 데이터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd></dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afb83bf1467b521ad5fc37d0309488865"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfield_bytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지에 길이를 알고있는 bytes 데이터를 추가한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>타겟 메세지 </td></tr>
+    <tr><td class="paramname">code</td><td>추가할 필드코드 </td></tr>
+    <tr><td class="paramname">ptr</td><td>추가할 데이터의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd></dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9382f519df23ce55b2d28fd557495602"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfield_nbytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지에 nbyte 데이터 필드를 추가한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>타겟 메세지 </td></tr>
+    <tr><td class="paramname">code</td><td>추가할 필드코드 </td></tr>
+    <tr><td class="paramname">length</td><td>추가할 필드데이터의 길이 </td></tr>
+    <tr><td class="paramname">ptr</td><td>추가할 데이터의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd></dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8b122ca57bffa57244408dbf7903ab5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfield_num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지에 4byte 이내의 데이터를 추가한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>타겟 메세지 </td></tr>
+    <tr><td class="paramname">code</td><td>추가할 필드코드 </td></tr>
+    <tr><td class="paramname">data</td><td>추가할 데이터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd></dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c6b2d1e19b9b437fea32fdab139d49f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_generateframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a>&#160;</td>
+          <td class="paramname"><em>pframe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지를 이용하여 전송하기 위한 프레임을 셋업한다. 프레임 자체를 위한 메모리를 할당받지는 않는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>소스 메세지 </td></tr>
+    <tr><td class="paramname">pframe</td><td>타겟 프레임 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd><a class="el" href="ttap3__base_8h.html#a6746c95b75f13efcc2f84090cb138b64">tp3_parseframe</a> </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+<p>calculate length : 대략적인 값임. 실제값은 이값보다 작음.</p>
+<p>allocate data area</p>
+<p>set header &amp; fields</p>
+<p>set checksum </p>
+
+</div>
+</div>
+<a class="anchor" id="a706cd7289a53f8840f2ed474d1f98e9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* tp3_geterrormsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td>
+          <td class="paramname"><em>stat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>확인을 위해 에러내역을 문자열로 반환합니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>상태코드 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>에러내용 문자열 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af230b7055e577b15fecfc317167a2dbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_getframesize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a>&#160;</td>
+          <td class="paramname"><em>pframe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지를 전송하기 위해서 메세지 프레임을 바이트 배열로 만들때의 길이를 알려준다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pframe</td><td>타겟 프레임 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>메세지 프레임을 바이트 배열로 만들었을때의 길이 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a305861fd012c76a40fbf2990944d60c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_initframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a>&#160;</td>
+          <td class="paramname"><em>pframe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지프레임을 초기화 한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pframe</td><td>초기화할 메세지 프레임 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd><a class="el" href="ttap3__base_8h.html#aeb758df84ce002d2f4c895b639b2108d">tp3_initmsg</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeb758df84ce002d2f4c895b639b2108d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_initmsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지를 초기화 한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>초기화할 메세지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd><a class="el" href="ttap3__base_8h.html#a72b9eeb61b540f8cc2116a8d1f048a59">tp3_setheader</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a931e43e69078bddc47d6c428f7d4d8b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_isnumberinfield </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지 가변필드에 들어있는 값이 숫자형인지 확인한다. 이는 tp3_fdata_t를 바이트배열로 읽을 것인지 숫자형 데이터로 읽을 것인지를 확인하는 용도로 사용된다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>읽을 메세지 </td></tr>
+    <tr><td class="paramname">code</td><td>읽을 필드코드 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>0이면 바이트배열형, 1이면 숫자형. 해당 필드가 없다면 -1을 리턴. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6746c95b75f13efcc2f84090cb138b64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_parseframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a>&#160;</td>
+          <td class="paramname"><em>pframe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>전송받은 프레임을 파싱하여 메세지를 셋업한다. 메세지 자체를 할당받지는 않는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pframe</td><td>소스 프레임 </td></tr>
+    <tr><td class="paramname">pmsg</td><td>타겟 메세지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd><a class="el" href="ttap3__base_8h.html#a0c6b2d1e19b9b437fea32fdab139d49f">tp3_generateframe</a> </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드, checksum 이 맞지 않으면 TP3_SC_CHECKSUM_NOT_MATCHED, \ 인터페이스 문자열이 맞지 않으면 TP3_SC_INTERFACETYPE_NOT_MATCHED 를 리턴함 </dd></dl>
+<p>check checksum</p>
+<p>parse frame </p>
+
+</div>
+</div>
+<a class="anchor" id="a037e540026b768f1e1b6d9402b5e4bbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_printerror </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td>
+          <td class="paramname"><em>stat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>확인을 위해 에러내역을 출력합니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>상태코드 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a12c0a1afabda777aed97749c62b40890"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_printframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a>&#160;</td>
+          <td class="paramname"><em>pframe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>확인을 위해 프레임을 콘솔에 출력한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pframe</td><td>출력할 프레임 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd><a class="el" href="ttap3__base_8h.html#a768e588670939ac305a71dbcabaf53d4">tp3_printmsg</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a768e588670939ac305a71dbcabaf53d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_printmsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>확인을 위해 메세지를 콘솔에 출력한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>출력할 메세지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd><a class="el" href="ttap3__base_8h.html#a12c0a1afabda777aed97749c62b40890">tp3_printframe</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae18bc4ddb8ae1d26816232562a2485aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_readfield </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="uniontp3__fdata__t.html">ptp3_fdata_t</a>&#160;</td>
+          <td class="paramname"><em>pdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지의 가변필드에서 데이터를 읽는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>읽을 메세지 </td></tr>
+    <tr><td class="paramname">code</td><td>읽을 필드코드 </td></tr>
+    <tr><td class="paramname">pdata</td><td>읽은 데이터를 저장할 위치 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>읽은 필드의 길이. -1 일 경우 해당 필드코드가 메세지상에 없는 것임. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f81595753dbb8d7cecf19a4abfcb2f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_readfield_num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지의 가변필드에서 숫자를 읽는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>읽을 메세지 </td></tr>
+    <tr><td class="paramname">code</td><td>읽을 필드코드 </td></tr>
+    <tr><td class="paramname">pdata</td><td>읽은 데이터를 저장할 위치 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>읽은 필드의 길이. -1 일 경우 해당 필드코드가 메세지상에 없는 것임. -2라면 해당필드가 4bytes 이상이라 정수변환이 안된다는 의미. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1fd9aa54ec856ad8714f3b936cc6067d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_readfieldlen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지 가변필드의 길이를 알려준다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>읽을 메세지 </td></tr>
+    <tr><td class="paramname">code</td><td>읽을 필드코드 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>필드의 길이. 해당 필드가 없다면 -1을 리턴. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a630d40391338335dadc79f348bc26fe8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_readframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a>&#160;</td>
+          <td class="paramname"><em>pframe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>전송된 바이트 배열을 읽어서 메세지 프레임을 구성한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pframe</td><td>타겟 프레임 </td></tr>
+    <tr><td class="paramname">buf</td><td>바이트 배열 </td></tr>
+    <tr><td class="paramname">len</td><td>길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>버퍼에서 사용한 길이. 음수라면 부족한 버퍼의 길이. 0 이라면 메세지 프레임을 위한 메모리 할당 실패. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6a3dfd6ef572814fe8f5f84fbc5f8f5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_readnum </td>
+          <td>(</td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>pbyte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>byte 배열에 세팅된 숫자값을 읽는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pbyte</td><td>바이트 배열 포인터 </td></tr>
+    <tr><td class="paramname">len</td><td>바이트 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>숫자값 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3bf30236a3efff225b5097136365fda8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_releaseframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a>&#160;</td>
+          <td class="paramname"><em>pframe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>프레임 내부에 필드데이터를 위해 할당된 메모리를 해제한다. 프레임 포인터 자체를 해제하지는 않는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pframe</td><td>타겟 프레임 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd><a class="el" href="ttap3__base_8h.html#a13ea6d738edf6de4d36fe353a160d012">tp3_releasemsg</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a13ea6d738edf6de4d36fe353a160d012"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_releasemsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지 내부에서 필드데이터를 위해 할당된 메모리를 해제한다. 메세지 포인터 자체를 해제하지는 않는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>타겟 메세지 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd><a class="el" href="ttap3__base_8h.html#a3bf30236a3efff225b5097136365fda8">tp3_releaseframe</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a72b9eeb61b540f8cc2116a8d1f048a59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_setheader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a459a2e8971a9a925cc47d302dcc0f623">tp3_msgtype_t</a>&#160;</td>
+          <td class="paramname"><em>msgtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a56b21d4dc9a4b8ac0f80f7d330679db9">tp3_transtype_t</a>&#160;</td>
+          <td class="paramname"><em>transtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gcgid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gosid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msgseq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지에 고정해더를 세팅한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>세팅할 메세지 </td></tr>
+    <tr><td class="paramname">msgtype</td><td>메세지타입 </td></tr>
+    <tr><td class="paramname">transtype</td><td>메세지 전송타입 </td></tr>
+    <tr><td class="paramname">gcgid</td><td>통합제어기 식별자 </td></tr>
+    <tr><td class="paramname">gosid</td><td>운영시스템 식별자 </td></tr>
+    <tr><td class="paramname">msgseq</td><td>메세지 일련번호 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>참고</dt><dd><a class="el" href="ttap3__base_8h.html#a4a5da1adcfe2538236ab97f6c957c228">tp3_addfield</a> </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adaefc3e5e0599a6014a4956bdec238a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_setresponse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>preq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pres</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a8df3dbbb5ea43ac61fd7457c8841efbf">tp3_rescode_t</a>&#160;</td>
+          <td class="paramname"><em>rescode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>요청에 대한 응답을 생성합니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">preq</td><td>요청 </td></tr>
+    <tr><td class="paramname">pres</td><td>요청에 대한 응답 </td></tr>
+    <tr><td class="paramname">rescode</td><td>요청에 대한 응답코드 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ade1f655d0237ed03da7e45b13b5761d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_writeframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__frame__t.html">ptp3_frame_t</a>&#160;</td>
+          <td class="paramname"><em>pframe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지를 전송하기 위해서 메세지 프레임을 바이트 배열에 기록한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pframe</td><td>타겟 프레임 </td></tr>
+    <tr><td class="paramname">buf</td><td>바이트 배열 </td></tr>
+    <tr><td class="paramname">len</td><td>길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드, TP3_SC_FRAMEFMT_ERR 를 리턴하는 경우 버퍼의 길이가 부족한 것임. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 목 11월 17 2016 10:46:00, 프로젝트명 : libtp3, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

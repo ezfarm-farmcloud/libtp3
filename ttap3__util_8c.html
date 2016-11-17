@@ -1,0 +1,1721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>libtp3: src/ttap3_util.c 파일 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libtp3
+   </div>
+   <div id="projectbrief">Library for TTAK.KO-06.0288 Part 3</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>열거형 타입</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>열거형 멤버</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>매크로</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">함수</a>  </div>
+  <div class="headertitle">
+<div class="title">ttap3_util.c 파일 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TTAK.KO-06.0288 Part 3 구현에 사용되는 유틸리티 함수 및 데이터타입  
+<a href="#details">더 자세히 ...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="ttap3__define_8h_source.html">ttap3_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ttap3__config_8h_source.html">ttap3_config.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ttap3__base_8h_source.html">ttap3_base.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ttap3__util_8h_source.html">ttap3_util.h</a>&gt;</code><br />
+<code>#include &lt;../util/mem.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+함수</h2></td></tr>
+<tr class="memitem:a1c042ad4a4527ab1f524a1b4238af3f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a1c042ad4a4527ab1f524a1b4238af3f3">tp3_setgcgprof</a> (<a class="el" href="structtp3__gcgprof__t.html">ptp3_gcgprof_t</a> pgcgprof, byte *serial, byte *model, byte *ipv4, byte *ipv6, int installsite, byte mcutype, byte ostype, int osver, byte ramsize, byte powertype, int swver)</td></tr>
+<tr class="separator:a1c042ad4a4527ab1f524a1b4238af3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ebf19d7cd3f97e499dff6a4113eab92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a1ebf19d7cd3f97e499dff6a4113eab92">tp3_readfields_gcgprof</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="structtp3__gcgprof__t.html">ptp3_gcgprof_t</a> pgcgprof)</td></tr>
+<tr class="separator:a1ebf19d7cd3f97e499dff6a4113eab92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153a1b483caf85e6a54fd03b383ad84c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a153a1b483caf85e6a54fd03b383ad84c">tp3_addfields_gcgprof</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="structtp3__gcgprof__t.html">ptp3_gcgprof_t</a> pgcgprof)</td></tr>
+<tr class="separator:a153a1b483caf85e6a54fd03b383ad84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58246c39f219e70f3575a9bd6665ad4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a58246c39f219e70f3575a9bd6665ad4e">tp3_readfields_senattr</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="structtp3__senattr__t.html">ptp3_senattr_t</a> psenattr)</td></tr>
+<tr class="separator:a58246c39f219e70f3575a9bd6665ad4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8217fa394d407cb46c1486360c2f26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#aac8217fa394d407cb46c1486360c2f26">tp3_addfields_senattr</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="structtp3__senattr__t.html">ptp3_senattr_t</a> psenattr)</td></tr>
+<tr class="separator:aac8217fa394d407cb46c1486360c2f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873285d0c0f40cabe60481e77fbb3962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a873285d0c0f40cabe60481e77fbb3962">tp3_readfields_actattr</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="structtp3__actattr__t.html">ptp3_actattr_t</a> pactattr)</td></tr>
+<tr class="separator:a873285d0c0f40cabe60481e77fbb3962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e3ba1d4045800309d61d87ec5b1a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a78e3ba1d4045800309d61d87ec5b1a10">tp3_addfields_actattr</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="structtp3__actattr__t.html">ptp3_actattr_t</a> pactattr)</td></tr>
+<tr class="separator:a78e3ba1d4045800309d61d87ec5b1a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f753b262905c1bcf7c7afad0238a6e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a2f753b262905c1bcf7c7afad0238a6e1">tp3_getgid</a> (int nid, int devid)</td></tr>
+<tr class="separator:a2f753b262905c1bcf7c7afad0238a6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1a9a8d8e800eef8dab46e5dc20856c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#afd1a9a8d8e800eef8dab46e5dc20856c">tp3_getdevid</a> (int gid)</td></tr>
+<tr class="separator:afd1a9a8d8e800eef8dab46e5dc20856c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f56c2e386b0f30e54389a0765c4a76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a51f56c2e386b0f30e54389a0765c4a76">tp3_getnid</a> (int gid)</td></tr>
+<tr class="separator:a51f56c2e386b0f30e54389a0765c4a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97689007f16a16a40e466df0234cb1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#aa97689007f16a16a40e466df0234cb1d">tp3_initnodedata</a> (<a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a> pnode, int numofdev, int *gids, <a class="el" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a> devtype)</td></tr>
+<tr class="separator:aa97689007f16a16a40e466df0234cb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c57f9860a8fcc0b4cb26fac6dbb71c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c57f9860a8fcc0b4cb26fac6dbb71c9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_getidxdev</b> (<a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a> pnode, int gid)</td></tr>
+<tr class="separator:a3c57f9860a8fcc0b4cb26fac6dbb71c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9c5561b369975cc36ee2d3ec7fa17a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#aff9c5561b369975cc36ee2d3ec7fa17a">tp3_setdevenv</a> (<a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a> pnode, int gid, int env)</td></tr>
+<tr class="separator:aff9c5561b369975cc36ee2d3ec7fa17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70104ed6bce5afa4361f2345698673d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#ac70104ed6bce5afa4361f2345698673d">tp3_setdevstat</a> (<a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a> pnode, int gid, <a class="el" href="ttap3__define_8h.html#ac99ee14a7183004542a52f988b24e225">tp3_devstat_t</a> stat)</td></tr>
+<tr class="separator:ac70104ed6bce5afa4361f2345698673d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e961116393b88aee630610b9cc08b2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a2e961116393b88aee630610b9cc08b2d">tp3_setdevattr</a> (<a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a> pnode, int gid, void *attr)</td></tr>
+<tr class="separator:a2e961116393b88aee630610b9cc08b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938fb07e4bfedc00414a0a6da15796dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a938fb07e4bfedc00414a0a6da15796dd">tp3_releasenodedata</a> (<a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a> pnode)</td></tr>
+<tr class="separator:a938fb07e4bfedc00414a0a6da15796dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f31efd136abb19c5eb168574d4081b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a80f31efd136abb19c5eb168574d4081b">tp3_setsenattr</a> (<a class="el" href="structtp3__senattr__t.html">ptp3_senattr_t</a> psenattr, int gsid, <a class="el" href="ttap3__define_8h.html#aa8e0d43208adad59e03b98a7b87f55ef">tp3_sentype_t</a> sentype, <a class="el" href="ttap3__define_8h.html#a0b8ad7806d73cd926f5a956a16cf5768">tp3_sendatatype_t</a> datatype, <a class="el" href="ttap3__define_8h.html#a602c849cb97496076b15594e09e5bf68">tp3_sengathertype_t</a> gathertype, int gatherinterval, int maxval, int minval, int precision, int errrange, <a class="el" href="ttap3__define_8h.html#a7f7a1a5f726084aee48ad3bf6f9260f5">tp3_senthrsdtype_t</a> thresholdtype, int threshold)</td></tr>
+<tr class="separator:a80f31efd136abb19c5eb168574d4081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffa9ad7b91b2a50f2b0b02eb5ed6c72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#afffa9ad7b91b2a50f2b0b02eb5ed6c72">tp3_setactattr</a> (<a class="el" href="structtp3__actattr__t.html">ptp3_actattr_t</a> pactattr, int gaid, <a class="el" href="ttap3__define_8h.html#aa58a210959b6db7c6e7e51afd350f3b3">tp3_acttype_t</a> acttype, <a class="el" href="ttap3__define_8h.html#a8e02ade67ee65b9b87d3b0bff570289b">tp3_actdatatype_t</a> datatype, <a class="el" href="ttap3__define_8h.html#adc664efa3dc540c15530ea7d9bcaacfc">tp3_actgathertype_t</a> gathertype, int gatherinterval)</td></tr>
+<tr class="separator:afffa9ad7b91b2a50f2b0b02eb5ed6c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555ad1fa353f5a4d5b10d36898c974c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a555ad1fa353f5a4d5b10d36898c974c8">tp3_initnset</a> (<a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a> pnset)</td></tr>
+<tr class="separator:a555ad1fa353f5a4d5b10d36898c974c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2693fec536be7c814e461c1c99142bd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2693fec536be7c814e461c1c99142bd0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_getidxnode</b> (<a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a> pnset, int nodeid)</td></tr>
+<tr class="separator:a2693fec536be7c814e461c1c99142bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c430c48d08e803cb051c675968db78a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a4c430c48d08e803cb051c675968db78a">tp3_updatenset</a> (<a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a> pnset, int nodeid, <a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a> pnode)</td></tr>
+<tr class="separator:a4c430c48d08e803cb051c675968db78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d9198535ec07f5cd830c89efe9cc91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a92d9198535ec07f5cd830c89efe9cc91">tp3_addnset</a> (<a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a> pnset, int nodeid, <a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a> pnode)</td></tr>
+<tr class="separator:a92d9198535ec07f5cd830c89efe9cc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0b5033c2c5077f074612dd45b3c854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#ada0b5033c2c5077f074612dd45b3c854">tp3_delnset</a> (<a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a> pnset, int nodeid)</td></tr>
+<tr class="separator:ada0b5033c2c5077f074612dd45b3c854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea196d0f6eba1711b52ed3b4cd2fad0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a5ea196d0f6eba1711b52ed3b4cd2fad0">tp3_setnodestat</a> (<a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a> pnset, int nodeid, <a class="el" href="ttap3__define_8h.html#a37390d672f85a1efd22d1d1b8f508069">tp3_nodestat_t</a> nstat)</td></tr>
+<tr class="separator:a5ea196d0f6eba1711b52ed3b4cd2fad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f6fc7c339fcb527c2270209b1f797d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#af1f6fc7c339fcb527c2270209b1f797d">tp3_releasenset</a> (<a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a> pnset)</td></tr>
+<tr class="separator:af1f6fc7c339fcb527c2270209b1f797d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6097ae1819ae487749e83619a8022019"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a6097ae1819ae487749e83619a8022019">tp3_readfield_array</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> fc, int *arr, int maxsize)</td></tr>
+<tr class="separator:a6097ae1819ae487749e83619a8022019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af197b5eb3b94c28177bf0925e102f7dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af197b5eb3b94c28177bf0925e102f7dc"></a>
+<a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_nsettoarray</b> (<a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a> pnset, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> fc, int *length, byte **pbyte)</td></tr>
+<tr class="separator:af197b5eb3b94c28177bf0925e102f7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96b7a8549534a16f0d16c63d2981946"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#ab96b7a8549534a16f0d16c63d2981946">tp3_addfield_nsetdata</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> fc, <a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a> pnset)</td></tr>
+<tr class="separator:ab96b7a8549534a16f0d16c63d2981946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4659b3270cf6871860f7bef03dd6f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f4659b3270cf6871860f7bef03dd6f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_settimestamp</b> (byte *ptr, time_t epoch)</td></tr>
+<tr class="separator:a2f4659b3270cf6871860f7bef03dd6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6712b4d4d335e60d9d0fa63ae375270f"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a6712b4d4d335e60d9d0fa63ae375270f">tp3_getepoch</a> (byte *ptr)</td></tr>
+<tr class="separator:a6712b4d4d335e60d9d0fa63ae375270f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae643d24d24797cd8355a330640d4fee5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#ae643d24d24797cd8355a330640d4fee5">tp3_addfield_timestamp</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> fc, time_t stamp)</td></tr>
+<tr class="separator:ae643d24d24797cd8355a330640d4fee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc892aeebbaa7a3e5bcf9706b62d314"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a7dc892aeebbaa7a3e5bcf9706b62d314">tp3_getinterval</a> (byte *ptr)</td></tr>
+<tr class="separator:a7dc892aeebbaa7a3e5bcf9706b62d314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd6174a65ccc1ea04abe5751946e3d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a9fd6174a65ccc1ea04abe5751946e3d8">tp3_addfield_interval</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> fc, int interval)</td></tr>
+<tr class="separator:a9fd6174a65ccc1ea04abe5751946e3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f5c0cb3f0dd15cc972b995079bbd14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#aa9f5c0cb3f0dd15cc972b995079bbd14">tp3_initblock</a> (<a class="el" href="structtp3__block__t.html">ptp3_block_t</a> pblock, int rows, int numofsn, int numofsens, int numofan, int numofacts)</td></tr>
+<tr class="separator:aa9f5c0cb3f0dd15cc972b995079bbd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829f1ab86dba2ef1d8527b443459f616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a829f1ab86dba2ef1d8527b443459f616">tp3_nextemptyblockitem</a> (<a class="el" href="structtp3__block__t.html">ptp3_block_t</a> pblock, time_t timestamp, <a class="el" href="ttap3__define_8h.html#a071e866ccb5d1d1a2020a600b468fd83">tp3_gcgstat_t</a> gcgstat)</td></tr>
+<tr class="separator:a829f1ab86dba2ef1d8527b443459f616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d53c4ab5b72336796f46cfad45a45d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#aa6d53c4ab5b72336796f46cfad45a45d">tp3_setblockitem</a> (<a class="el" href="structtp3__block__t.html">ptp3_block_t</a> pblock, int id, int value, <a class="el" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a> devtype)</td></tr>
+<tr class="separator:aa6d53c4ab5b72336796f46cfad45a45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778dbe5eb228ee889b0a79255adace17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a778dbe5eb228ee889b0a79255adace17"></a>
+byte *&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_setstatblockbytes</b> (byte *ptr, int numofdev, <a class="el" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a> devtype, <a class="el" href="structtp3__blockitem__t.html">ptp3_blockitem_t</a> pitem)</td></tr>
+<tr class="separator:a778dbe5eb228ee889b0a79255adace17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d55486572ce37a0ec4544ec3bdd486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a46d55486572ce37a0ec4544ec3bdd486">tp3_addfield_statblock</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="structtp3__block__t.html">ptp3_block_t</a> pblock)</td></tr>
+<tr class="separator:a46d55486572ce37a0ec4544ec3bdd486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416a4691c10f2db176b0c3540de9df15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a416a4691c10f2db176b0c3540de9df15"></a>
+byte *&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_getstatblockbytes</b> (byte *ptr, int numofdev, <a class="el" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a> devtype, <a class="el" href="structtp3__blockitem__t.html">ptp3_blockitem_t</a> pitem)</td></tr>
+<tr class="separator:a416a4691c10f2db176b0c3540de9df15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72af175072e2e2a8270922f44aee25dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a72af175072e2e2a8270922f44aee25dd">tp3_parsestatblock</a> (<a class="el" href="structtp3__block__t.html">ptp3_block_t</a> pblock, int rows, byte *ptr, int len)</td></tr>
+<tr class="separator:a72af175072e2e2a8270922f44aee25dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896beee414b6baff31886583443c15a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a896beee414b6baff31886583443c15a4"></a>
+byte *&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_setenvblockbytes</b> (byte *ptr, int numofdev, <a class="el" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a> devtype, <a class="el" href="structtp3__blockitem__t.html">ptp3_blockitem_t</a> pitem)</td></tr>
+<tr class="separator:a896beee414b6baff31886583443c15a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39a92010da8c117efabd19db4c40301"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa39a92010da8c117efabd19db4c40301"></a>
+byte *&#160;</td><td class="memItemRight" valign="bottom"><b>tp3_getenvblockbytes</b> (byte *ptr, int numofdev, <a class="el" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a> devtype, <a class="el" href="structtp3__blockitem__t.html">ptp3_blockitem_t</a> pitem)</td></tr>
+<tr class="separator:aa39a92010da8c117efabd19db4c40301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072dd4b5089da463b40c2ed6d758fdb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#a072dd4b5089da463b40c2ed6d758fdb2">tp3_parseenvblock</a> (<a class="el" href="structtp3__block__t.html">ptp3_block_t</a> pblock, int rows, byte *ptr, int len)</td></tr>
+<tr class="separator:a072dd4b5089da463b40c2ed6d758fdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae40657caf9bb892dc8f1ac72a1b841"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#aeae40657caf9bb892dc8f1ac72a1b841">tp3_addfield_envblock</a> (<a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a> pmsg, <a class="el" href="structtp3__block__t.html">ptp3_block_t</a> pblock)</td></tr>
+<tr class="separator:aeae40657caf9bb892dc8f1ac72a1b841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5c07f0acc63c9e9da0f062cb0a3a1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ttap3__util_8c.html#abe5c07f0acc63c9e9da0f062cb0a3a1b">tp3_releaseblock</a> (<a class="el" href="structtp3__block__t.html">ptp3_block_t</a> pblock)</td></tr>
+<tr class="separator:abe5c07f0acc63c9e9da0f062cb0a3a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>TTAK.KO-06.0288 Part 3 구현에 사용되는 유틸리티 함수 및 데이터타입 </p>
+<p>Copyright © 2015-2016 ezfarm Co., Ltd. All Rights Reserved. </p>
+</div><h2 class="groupheader">함수 문서화</h2>
+<a class="anchor" id="aeae40657caf9bb892dc8f1ac72a1b841"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfield_envblock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__block__t.html">ptp3_block_t</a>&#160;</td>
+          <td class="paramname"><em>pblock</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>환경정보이력 블럭바이트를 생성하고, 메세지 필드에 추가한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">pblock</td><td>블럭 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9fd6174a65ccc1ea04abe5751946e3d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfield_interval </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>fc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>시간간격값을 6바이트의 배열로 변환하여 해당 필드에 넣는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">fc</td><td>메세지 필드 </td></tr>
+    <tr><td class="paramname">interval</td><td>타임인터벌 (초단위) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab96b7a8549534a16f0d16c63d2981946"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfield_nsetdata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>fc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a>&#160;</td>
+          <td class="paramname"><em>pnset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드셋 정보 구조체를 메세지 프레임에 넣을 수 있는 바이트배열로 추출하고, 해당 필드에 넣는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">fc</td><td>tp3_fieldcode_t 의 값을 이용해서 결과 배열의 형태를 결정 </td></tr>
+    <tr><td class="paramname">pnset</td><td>노드정보 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a46d55486572ce37a0ec4544ec3bdd486"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfield_statblock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__block__t.html">ptp3_block_t</a>&#160;</td>
+          <td class="paramname"><em>pblock</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>상태정보이력 블럭바이트를 생성하고, 메세지 필드에 추가한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">pblock</td><td>블럭 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae643d24d24797cd8355a330640d4fee5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfield_timestamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>fc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>stamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>time_t 값을 7바이트의 타임스탬프값으로 변환하여 해당 필드에 넣는다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">fc</td><td>메세지 필드 </td></tr>
+    <tr><td class="paramname">stamp</td><td>epoch 타임 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78e3ba1d4045800309d61d87ec5b1a10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfields_actattr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__actattr__t.html">ptp3_actattr_t</a>&#160;</td>
+          <td class="paramname"><em>pactattr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>구동기 프로파일 정보를 메세지 세팅합니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">pactattr</td><td>구동기 속성 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a153a1b483caf85e6a54fd03b383ad84c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfields_gcgprof </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__gcgprof__t.html">ptp3_gcgprof_t</a>&#160;</td>
+          <td class="paramname"><em>pgcgprof</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GCG 프로파일 정보를 메세지에 세팅합니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">pgcgprof</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aac8217fa394d407cb46c1486360c2f26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addfields_senattr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__senattr__t.html">ptp3_senattr_t</a>&#160;</td>
+          <td class="paramname"><em>psenattr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>센서 프로파일 정보를 메세지에 세팅합니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">psenattr</td><td>센서 속성 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a92d9198535ec07f5cd830c89efe9cc91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_addnset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a>&#160;</td>
+          <td class="paramname"><em>pnset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nodeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a>&#160;</td>
+          <td class="paramname"><em>pnode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드셋 정보 구조체에 노드를 추가한다. tp3_update_nsetdata 사용을 권장하며, 이 함수의 직접 사용을 권장하지 않는다. 노드 정보 구조체를 복사할때 딥카피를 하지 않기 때문에, 노드정보를 추가한뒤에 tp3_releasenodedata 를 실행하지 않아야 한다. 추후 tp3_delnodefromndata 수행시 자동으로 tp3_releasenodedata 가 호출된다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnset</td><td>노드셋 정보 구조체 </td></tr>
+    <tr><td class="paramname">nodeid</td><td>노드 아이디 </td></tr>
+    <tr><td class="paramname">pnode</td><td>디바이스정보 구조체에 대한 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+<dl class="section see"><dt>참고</dt><dd>tp3_update_nsetdata </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ada0b5033c2c5077f074612dd45b3c854"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_delnset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a>&#160;</td>
+          <td class="paramname"><em>pnset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nodeid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드셋 정보 구조체에서 하나의 노드를 제거한다. tp3_update_nsetdata 사용을 권장하며, 이 함수의 직접 사용을 권장하지 않는다. 노드 정보 구조체에 대한 해제도 동시에 수행된다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnset</td><td>노드셋 정보 구조체 </td></tr>
+    <tr><td class="paramname">nodeid</td><td>노드 아이디 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+<dl class="section see"><dt>참고</dt><dd>tp3_update_nsetdata </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afd1a9a8d8e800eef8dab46e5dc20856c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_getdevid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GID에서 센서 혹은 구동기 아이디를 추출합니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gid</td><td>글로벌 아이디 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>sid or aid </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6712b4d4d335e60d9d0fa63ae375270f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t tp3_getepoch </td>
+          <td>(</td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>7바이트의 타임스탬프값을 time_t로 변환한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>타임스탬프 문자열 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>epoch 타임 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2f753b262905c1bcf7c7afad0238a6e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_getgid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>devid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GID를 조합합니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nid</td><td>노드 아이디 </td></tr>
+    <tr><td class="paramname">devid</td><td>센서 아이디 혹은 구동기 아이디 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>gid </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7dc892aeebbaa7a3e5bcf9706b62d314"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_getinterval </td>
+          <td>(</td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>6바이트의 interval값을 초로 변환한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>interval 문자열 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>interval 초 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a51f56c2e386b0f30e54389a0765c4a76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_getnid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GID에서 노드 아이디를 추출합니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gid</td><td>글로벌 아이디 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>nodeid </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa9f5c0cb3f0dd15cc972b995079bbd14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_initblock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__block__t.html">ptp3_block_t</a>&#160;</td>
+          <td class="paramname"><em>pblock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numofsn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numofsens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numofan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numofacts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>상태정보이력조회 혹은 환경정보이력조회의 결과 블럭 구조체를 초기화한다. 단, 환경정보이력시 numofan과 numofsn 값은 무시된다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pblock</td><td>블럭 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">rows</td><td>블럭내 레코드의 개수 </td></tr>
+    <tr><td class="paramname">numofsn</td><td>센서노드의 개수 </td></tr>
+    <tr><td class="paramname">numofsens</td><td>센서의 개수 </td></tr>
+    <tr><td class="paramname">numofan</td><td>제어노드의 개수 </td></tr>
+    <tr><td class="paramname">numofacts</td><td>구동기의 개수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa97689007f16a16a40e466df0234cb1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_initnodedata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a>&#160;</td>
+          <td class="paramname"><em>pnode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numofdev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>gids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a>&#160;</td>
+          <td class="paramname"><em>devtype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드 정보 구조체를 초기화 한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnode</td><td>노드 정보 구조체 </td></tr>
+    <tr><td class="paramname">numofdev</td><td>디바이스의 개수 </td></tr>
+    <tr><td class="paramname">gids</td><td>해당 디바이스의 글로벌 아이디들 </td></tr>
+    <tr><td class="paramname">devtype</td><td>디바이스 타입 (TP_DEV_SENSOR 와 TP_DEV_ACTUATOR 만가능) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a555ad1fa353f5a4d5b10d36898c974c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_initnset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a>&#160;</td>
+          <td class="paramname"><em>pnset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드셋 정보 구조체를 초기화 한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnset</td><td>노드셋 정보 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a829f1ab86dba2ef1d8527b443459f616"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_nextemptyblockitem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__block__t.html">ptp3_block_t</a>&#160;</td>
+          <td class="paramname"><em>pblock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a071e866ccb5d1d1a2020a600b468fd83">tp3_gcgstat_t</a>&#160;</td>
+          <td class="paramname"><em>gcgstat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>하나의 데이터블럭 아이템을 초기화한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pblock</td><td>블럭 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">timestamp</td><td>타임스탬프 </td></tr>
+    <tr><td class="paramname">gcgstat</td><td>통합제어기 상태 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a072dd4b5089da463b40c2ed6d758fdb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_parseenvblock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__block__t.html">ptp3_block_t</a>&#160;</td>
+          <td class="paramname"><em>pblock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>환경정보이력 블럭바이트를 파싱한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pblock</td><td>블럭 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">rows</td><td>블럭아이템의 개수 </td></tr>
+    <tr><td class="paramname">ptr</td><td>메세지 필드 데이터에 대한 포인터 </td></tr>
+    <tr><td class="paramname">len</td><td>메세지 필드 데이터의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a72af175072e2e2a8270922f44aee25dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_parsestatblock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__block__t.html">ptp3_block_t</a>&#160;</td>
+          <td class="paramname"><em>pblock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>상태정보이력 블럭바이트를 파싱한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pblock</td><td>블럭 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">rows</td><td>블럭아이템의 개수 </td></tr>
+    <tr><td class="paramname">ptr</td><td>메세지 필드 데이터에 대한 포인터 </td></tr>
+    <tr><td class="paramname">len</td><td>메세지 필드 데이터의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6097ae1819ae487749e83619a8022019"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tp3_readfield_array </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a>&#160;</td>
+          <td class="paramname"><em>fc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>메세지에서 특정 필드의 배열형식의 데이터를 추출한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">fc</td><td>tp3_fieldcode_t 의 값을 이용해서 결과 배열의 형태를 결정 </td></tr>
+    <tr><td class="paramname">arr</td><td>값을 넣을 공간 </td></tr>
+    <tr><td class="paramname">maxsize</td><td>arr의 크기 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>읽은 아이템의 개수 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a873285d0c0f40cabe60481e77fbb3962"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_readfields_actattr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__actattr__t.html">ptp3_actattr_t</a>&#160;</td>
+          <td class="paramname"><em>pactattr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>구동기 프로파일 정보를 메세지에서 읽습니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">pactattr</td><td>구동기 속성 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ebf19d7cd3f97e499dff6a4113eab92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_readfields_gcgprof </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__gcgprof__t.html">ptp3_gcgprof_t</a>&#160;</td>
+          <td class="paramname"><em>pgcgprof</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GCG 프로파일 정보를 메세지에서 읽습니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">pgcgprof</td><td>GCG 프로파일 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a58246c39f219e70f3575a9bd6665ad4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_readfields_senattr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__msg__t.html">ptp3_msg_t</a>&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__senattr__t.html">ptp3_senattr_t</a>&#160;</td>
+          <td class="paramname"><em>psenattr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>센서 프로파일 정보를 메세지에서 읽습니다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pmsg</td><td>메세지 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">psenattr</td><td>센서 속성 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abe5c07f0acc63c9e9da0f062cb0a3a1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_releaseblock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__block__t.html">ptp3_block_t</a>&#160;</td>
+          <td class="paramname"><em>pblock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>블럭 정보 구조체의 내부 데이터를 해제한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pblock</td><td>블럭 정보 구조체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a938fb07e4bfedc00414a0a6da15796dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_releasenodedata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a>&#160;</td>
+          <td class="paramname"><em>pnode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드 정보 구조체의 내부 데이터를 해제한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnode</td><td>노드 정보 구조체 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af1f6fc7c339fcb527c2270209b1f797d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_releasenset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a>&#160;</td>
+          <td class="paramname"><em>pnset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드셋 정보 구조체의 내부 메모리 해제 </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnset</td><td>노드셋 정보 구조체의 포인터 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afffa9ad7b91b2a50f2b0b02eb5ed6c72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_setactattr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__actattr__t.html">ptp3_actattr_t</a>&#160;</td>
+          <td class="paramname"><em>pactattr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gaid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#aa58a210959b6db7c6e7e51afd350f3b3">tp3_acttype_t</a>&#160;</td>
+          <td class="paramname"><em>acttype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a8e02ade67ee65b9b87d3b0bff570289b">tp3_actdatatype_t</a>&#160;</td>
+          <td class="paramname"><em>datatype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#adc664efa3dc540c15530ea7d9bcaacfc">tp3_actgathertype_t</a>&#160;</td>
+          <td class="paramname"><em>gathertype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gatherinterval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>구동기 속성 정보를 세팅한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pactattr</td><td>구동기 속성 정보 구조체 </td></tr>
+    <tr><td class="paramname">gaid</td><td>구동기의 글로벌 아이디 </td></tr>
+    <tr><td class="paramname">acttype</td><td>구동기의 타입 </td></tr>
+    <tr><td class="paramname">datatype</td><td>구동기가 받아들일 수 있는 제어값의 타입 </td></tr>
+    <tr><td class="paramname">gathertype</td><td>데이터 수집 방법 </td></tr>
+    <tr><td class="paramname">gatherinterval</td><td>데이터 수집 주기 (수집방법이 주기적일때) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6d53c4ab5b72336796f46cfad45a45d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_setblockitem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__block__t.html">ptp3_block_t</a>&#160;</td>
+          <td class="paramname"><em>pblock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#abbf17c84f49db2117c19c0622fbdda5f">tp3_dev_t</a>&#160;</td>
+          <td class="paramname"><em>devtype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>하나의 데이터블럭 아이템에 값을 추가한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pblock</td><td>블럭 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">id</td><td>디바이스 아이디 (센서노드아이디, 제어노드아이디, 센서아이디, 액츄에이터아이디) </td></tr>
+    <tr><td class="paramname">value</td><td>값 (상태값 혹은 환경값) </td></tr>
+    <tr><td class="paramname">devtype</td><td>디바이스의 종류 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2e961116393b88aee630610b9cc08b2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_setdevattr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a>&#160;</td>
+          <td class="paramname"><em>pnode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>attr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드 정보 중 특정 디바이스의 상태 정보값을 업데이트 한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnode</td><td>노드 정보 구조체 </td></tr>
+    <tr><td class="paramname">gid</td><td>해당 디바이스의 글로벌 아이디 </td></tr>
+    <tr><td class="paramname">attr</td><td>속성정보에 대한 포인터 (ptp3_senattr_t or ptp3_actattr_t) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aff9c5561b369975cc36ee2d3ec7fa17a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_setdevenv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a>&#160;</td>
+          <td class="paramname"><em>pnode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>env</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드 정보 중 특정 디바이스의 환경정보값을 업데이트 한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnode</td><td>노드 정보 구조체 </td></tr>
+    <tr><td class="paramname">gid</td><td>해당 디바이스의 글로벌 아이디 </td></tr>
+    <tr><td class="paramname">env</td><td>환경정보값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac70104ed6bce5afa4361f2345698673d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_setdevstat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a>&#160;</td>
+          <td class="paramname"><em>pnode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#ac99ee14a7183004542a52f988b24e225">tp3_devstat_t</a>&#160;</td>
+          <td class="paramname"><em>stat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드 정보 중 특정 디바이스의 상태 정보값을 업데이트 한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnode</td><td>노드 정보 구조체 </td></tr>
+    <tr><td class="paramname">gid</td><td>해당 디바이스의 글로벌 아이디 </td></tr>
+    <tr><td class="paramname">stat</td><td>상태정보값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1c042ad4a4527ab1f524a1b4238af3f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_setgcgprof </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__gcgprof__t.html">ptp3_gcgprof_t</a>&#160;</td>
+          <td class="paramname"><em>pgcgprof</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>serial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>ipv4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>ipv6</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>installsite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>mcutype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>ostype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>osver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>ramsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>powertype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>swver</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>통합제어기의 프로파일 정보 구조체를 세팅한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serial</td><td>시리얼번호 </td></tr>
+    <tr><td class="paramname">model</td><td>모델명 </td></tr>
+    <tr><td class="paramname">ipv4</td><td>IPv4 주소 </td></tr>
+    <tr><td class="paramname">ipv6</td><td>IPv6 주소 </td></tr>
+    <tr><td class="paramname">installsite</td><td>설치위치 </td></tr>
+    <tr><td class="paramname">mcutype</td><td>mcu 종류 </td></tr>
+    <tr><td class="paramname">ostype</td><td>운영체제 종류 </td></tr>
+    <tr><td class="paramname">osver</td><td>운영체제 버전 </td></tr>
+    <tr><td class="paramname">ramsize</td><td>램사이즈 </td></tr>
+    <tr><td class="paramname">powertype</td><td>전원 타입 </td></tr>
+    <tr><td class="paramname">swver</td><td>소프트웨어 버전 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ea196d0f6eba1711b52ed3b4cd2fad0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_setnodestat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a>&#160;</td>
+          <td class="paramname"><em>pnset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nodeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a37390d672f85a1efd22d1d1b8f508069">tp3_nodestat_t</a>&#160;</td>
+          <td class="paramname"><em>nstat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드의 상태정보를 노드셋 정보 구조체에 세팅한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnset</td><td>노드정보 구조체의 포인터 </td></tr>
+    <tr><td class="paramname">nodeid</td><td>노드 아이디 </td></tr>
+    <tr><td class="paramname">nstat</td><td>노드의 상태 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a80f31efd136abb19c5eb168574d4081b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tp3_setsenattr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__senattr__t.html">ptp3_senattr_t</a>&#160;</td>
+          <td class="paramname"><em>psenattr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#aa8e0d43208adad59e03b98a7b87f55ef">tp3_sentype_t</a>&#160;</td>
+          <td class="paramname"><em>sentype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a0b8ad7806d73cd926f5a956a16cf5768">tp3_sendatatype_t</a>&#160;</td>
+          <td class="paramname"><em>datatype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a602c849cb97496076b15594e09e5bf68">tp3_sengathertype_t</a>&#160;</td>
+          <td class="paramname"><em>gathertype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gatherinterval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precision</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>errrange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ttap3__define_8h.html#a7f7a1a5f726084aee48ad3bf6f9260f5">tp3_senthrsdtype_t</a>&#160;</td>
+          <td class="paramname"><em>thresholdtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>센서 속성 정보를 세팅한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">psenattr</td><td>센서 속성 정보 구조체 </td></tr>
+    <tr><td class="paramname">gsid</td><td>센서의 글로벌 아이디 </td></tr>
+    <tr><td class="paramname">sentype</td><td>센서의 타입 </td></tr>
+    <tr><td class="paramname">datatype</td><td>센서가 받아들일 수 있는 제어값의 타입 </td></tr>
+    <tr><td class="paramname">gathertype</td><td>데이터 수집 방법 </td></tr>
+    <tr><td class="paramname">gatherinterval</td><td>데이터 수집 주기 (수집방법이 주기적일때) </td></tr>
+    <tr><td class="paramname">maxval</td><td>최대값 </td></tr>
+    <tr><td class="paramname">minval</td><td>최소값 </td></tr>
+    <tr><td class="paramname">precision</td><td>정밀도 </td></tr>
+    <tr><td class="paramname">errrange</td><td>에러값의 범위 </td></tr>
+    <tr><td class="paramname">thresholdtype</td><td>임계치 확인 방법 </td></tr>
+    <tr><td class="paramname">threshold</td><td>임계치값 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c430c48d08e803cb051c675968db78a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> tp3_updatenset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtp3__nsetdata__t.html">ptp3_nsetdata_t</a>&#160;</td>
+          <td class="paramname"><em>pnset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nodeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtp3__nodedata__t.html">ptp3_nodedata_t</a>&#160;</td>
+          <td class="paramname"><em>pnode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>노드셋 정보 구조체에 노드정보를 업데이트한다. 노드아이디가 없다면 새로 만들고, 노드아이디가 있다면 nodedata 를 덮어쓴다. 단, pnode 가 NULL 이라면 해당 노드아이디에 값을 제거한다. </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pnset</td><td>노드셋 정보 구조체 </td></tr>
+    <tr><td class="paramname">nodeid</td><td>노드 아이디 </td></tr>
+    <tr><td class="paramname">pnode</td><td>노드 정보 구조체 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>상태코드 </dd></dl>
+<dl class="section see"><dt>참고</dt><dd>tp3_delnodefromndata tp3_addnodetondata </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 목 11월 17 2016 10:46:00, 프로젝트명 : libtp3, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

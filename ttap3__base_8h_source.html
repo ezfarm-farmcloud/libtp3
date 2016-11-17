@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>libtp3: include/ttap3_base.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libtp3
+   </div>
+   <div id="projectbrief">Library for TTAK.KO-06.0288 Part 3</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>데이타&#160;구조</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>전역</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>데이타 구조</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>변수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>타입정의</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>열거형 타입</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>열거형 멤버</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>매크로</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>페이지들</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ttap3_base.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ttap3__base_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef __LIB_TTA_P3_BASE_H__</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define __LIB_TTA_P3_BASE_H__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> byte;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structtp3__frame__t.html">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structtp3__frame__t.html#ab6cc0f47e88f18f6af00ef14bd18a74e">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtp3__frame__t.html#ab6cc0f47e88f18f6af00ef14bd18a74e">length</a>;         </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structtp3__frame__t.html#a583b58066e4b44c0814e82004643995c">   23</a></span>&#160;    byte *<a class="code" href="structtp3__frame__t.html#a583b58066e4b44c0814e82004643995c">data</a>;         </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structtp3__frame__t.html#abc9d67d63b271f922157490548bc2657">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtp3__frame__t.html#abc9d67d63b271f922157490548bc2657">checksum</a>;       </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <a class="code" href="structtp3__frame__t.html">tp3_frame_t</a>, *<a class="code" href="structtp3__frame__t.html">ptp3_frame_t</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structtp3__framefield__t.html">   33</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structtp3__framefield__t.html#aaa9e4dc3d78f1e82b725536b76219533">   34</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> code:16;       </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structtp3__framefield__t.html#a30fa9a368d63231a82d0725c4ae07bdf">   35</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> length:16;     </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structtp3__framefield__t.html#a340224220f306b53e8068bfe4985c058">   36</a></span>&#160;    byte <a class="code" href="structtp3__framefield__t.html#a340224220f306b53e8068bfe4985c058">data</a>;                  </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <a class="code" href="structtp3__framefield__t.html">tp3_framefield_t</a>, *<a class="code" href="structtp3__framefield__t.html">ptp3_framefield_t</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="ttap3__base_8h.html#a75ed28ea030b03c1588548682468de63">   40</a></span>&#160;<span class="preprocessor">#define tp3_set2bytes(x,y) (x)[1] = (y) &amp; 0xFF; (x)[0] = (((y) &amp; 0xFF00) &gt;&gt; 8);</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="ttap3__base_8h.html#a92fee246768bd9488aa117a081567e02">   42</a></span>&#160;<span class="preprocessor">#define tp3_set3bytes(x,y) (x)[2] = (y) &amp; 0xFF; (x)[1] = (((y) &amp; 0xFF00) &gt;&gt; 8);\</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">                    (x)[0] = (((y) &amp; 0xFF0000) &gt;&gt; 16);</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="ttap3__base_8h.html#a4cc5807bb8d5565a319cf617f202fac1">   45</a></span>&#160;<span class="preprocessor">#define tp3_set4bytes(x,y) (x)[3] = (y) &amp; 0xFF; (x)[2] = (((y) &amp; 0xFF00) &gt;&gt; 8);\</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">                    (x)[1] = (((y) &amp; 0xFF0000) &gt;&gt; 16); (x)[0] = (((y) &amp; 0xFF000000) &gt;&gt; 24);</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="ttap3__base_8h.html#a6a3dfd6ef572814fe8f5f84fbc5f8f5e">tp3_readnum</a> (byte *pbyte, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define _TP3_HEADER_INTERFACE_LEN 10</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define _TP3_HEADER_DATESTR_LEN 8</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define _TP3_HEADER_TIMESTR_LEN 6</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define _TP3_HEADER_MSGSEQ_LEN  6</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define _TP3_HEADER_LENGTH      70          // 2 * 8 + 2 * 8 + 38</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define _TP3_FIELDINFO_LENGTH   4</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define _TP3_CHECKSUM_LENGTH    2</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#define _TP3_MAX_ITEM           256</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#define _TP3_INTERFACETYPE_LEN  7</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define _TP3_INTERFACETYPE      &quot;GOS_GCG   &quot;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define _TP3_MSGSEQ_MAX         999999</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define _TP3_HEXCHARS           &quot;0123456789ABCDEF&quot;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#define _TP3_FIXED_HEADER_LEN   8</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structtp3__header__t.html">   79</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structtp3__header__t.html#af31ce2cda906927c6e96df24074ed09e">   80</a></span>&#160;    <span class="keywordtype">char</span> ifacetype[_TP3_HEADER_INTERFACE_LEN];  </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structtp3__header__t.html#aba24a842a6098785bf794f235777bca6">   81</a></span>&#160;    <a class="code" href="ttap3__define_8h.html#a459a2e8971a9a925cc47d302dcc0f623">tp3_msgtype_t</a> <a class="code" href="structtp3__header__t.html#aba24a842a6098785bf794f235777bca6">msgtype</a>;                      </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="structtp3__header__t.html#a4af3ed17955d8a5c5210eec4049cc45d">   82</a></span>&#160;    <a class="code" href="ttap3__define_8h.html#a56b21d4dc9a4b8ac0f80f7d330679db9">tp3_transtype_t</a> <a class="code" href="structtp3__header__t.html#a4af3ed17955d8a5c5210eec4049cc45d">transtype</a>;                  </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structtp3__header__t.html#a33b5b74ac5b5f34a7d09a407925504c4">   83</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtp3__header__t.html#a33b5b74ac5b5f34a7d09a407925504c4">gcgid</a>;                                  </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="structtp3__header__t.html#aca1f30c2e37eeaa7007611bfda8e583f">   84</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtp3__header__t.html#aca1f30c2e37eeaa7007611bfda8e583f">gosid</a>;                                  </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="structtp3__header__t.html#ac0f5754b8fb968da5b3f2b862ee0887c">   85</a></span>&#160;    <span class="keywordtype">char</span> tdate[_TP3_HEADER_DATESTR_LEN];        </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structtp3__header__t.html#a7be1b04ea2067e48d17489281814d8be">   86</a></span>&#160;    <span class="keywordtype">char</span> ttime[_TP3_HEADER_TIMESTR_LEN];        </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structtp3__header__t.html#a99476e3e1df238999a53b9e75d5ddd1b">   87</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtp3__header__t.html#a99476e3e1df238999a53b9e75d5ddd1b">msgseq</a>;                                 </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structtp3__header__t.html#a90856f6de9b1d904a72469b47bef9051">   89</a></span>&#160;    <a class="code" href="ttap3__define_8h.html#a8df3dbbb5ea43ac61fd7457c8841efbf">tp3_rescode_t</a> <a class="code" href="structtp3__header__t.html#a90856f6de9b1d904a72469b47bef9051">rescode</a>;                      </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;} <a class="code" href="structtp3__header__t.html">tp3_header_t</a>, *<a class="code" href="structtp3__header__t.html">ptp3_header_t</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">#define TP3_ID_SIZE     3</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">#define TP3_GID_SIZE    4</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">#define TP3_SVAL_SIZE   4</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">#define TP3_AVAL_SIZE   2</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="uniontp3__fdata__t.html">  103</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="uniontp3__fdata__t.html#a635486d124f4562a1dab05637bc10c6b">  104</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="uniontp3__fdata__t.html#a635486d124f4562a1dab05637bc10c6b">data</a>;           </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="uniontp3__fdata__t.html#a429e5bd951dc64fbacac9374ec68a220">  105</a></span>&#160;    byte *<a class="code" href="uniontp3__fdata__t.html#a429e5bd951dc64fbacac9374ec68a220">pbyte</a>;        </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;} <a class="code" href="uniontp3__fdata__t.html">tp3_fdata_t</a>, *<a class="code" href="uniontp3__fdata__t.html">ptp3_fdata_t</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="structtp3__field__t.html">  109</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="structtp3__field__t.html#a6e96ac00f13c6ac3bf3b6ee3d9738e5b">  110</a></span>&#160;    <a class="code" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> <a class="code" href="structtp3__field__t.html#a6e96ac00f13c6ac3bf3b6ee3d9738e5b">code</a>;       </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structtp3__field__t.html#a801ccdcf26314c7372a6b69880f98c66">  111</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtp3__field__t.html#a801ccdcf26314c7372a6b69880f98c66">length</a>;                 </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="structtp3__field__t.html#a26a4cce90b76627991fd8b4a28512e52">  112</a></span>&#160;    <a class="code" href="uniontp3__fdata__t.html">tp3_fdata_t</a> <a class="code" href="structtp3__field__t.html#a26a4cce90b76627991fd8b4a28512e52">data</a>;           </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <a class="code" href="structtp3__field__t.html">tp3_field_t</a>, *<a class="code" href="structtp3__field__t.html">ptp3_field_t</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="structtp3__msg__t.html">  121</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="structtp3__msg__t.html#a16ccd70e1528e0bf89447681ff22afff">  122</a></span>&#160;    <a class="code" href="structtp3__header__t.html">tp3_header_t</a> <a class="code" href="structtp3__msg__t.html#a16ccd70e1528e0bf89447681ff22afff">header</a>;        </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="structtp3__msg__t.html#a8cb2f241b6b52ce767cda48eb905ae50">  123</a></span>&#160;    ptp3_field_t <a class="code" href="structtp3__msg__t.html#a8cb2f241b6b52ce767cda48eb905ae50">fields</a>;        </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="structtp3__msg__t.html#ad300638b446d74b45ce3cc4f5ac312fb">  124</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtp3__msg__t.html#ad300638b446d74b45ce3cc4f5ac312fb">numoffields</a>;            </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="structtp3__msg__t.html#a66c78832cf542c7d5acc3abe9c522809">  125</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtp3__msg__t.html#a66c78832cf542c7d5acc3abe9c522809">sizeoffields</a>;           </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <a class="code" href="structtp3__msg__t.html">tp3_msg_t</a>, *<a class="code" href="structtp3__msg__t.html">ptp3_msg_t</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="ttap3__base_8h.html#a0faa08a8a3b9ae17f528ae389d7e05a0">  129</a></span>&#160;<span class="preprocessor">#define TP3_STAT_NOERROR(expr)      \</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">    do {                        \</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">        tp3_stat_t __stat;  \</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">        if ((__stat = expr) != TP3_SC_NOERROR) {            \</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">            fprintf (stderr, &quot;Status error (%s) returned in %s on line %d: %s\n&quot;,      \</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">                tp3_geterrormsg (__stat),   \</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">                __FILE__,               \</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">                __LINE__,               \</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">                #expr);                 \</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">            return __stat;              \</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">        }                               \</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">    } while (0);</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="ttap3__base_8h.html#af5a6d35c6c6d7a492fd3e2c42f376f60">  143</a></span>&#160;<span class="preprocessor">#define TP3_STAT_RETURN(expr,stat)  \</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">    do {                        \</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">        if ((expr)) {           \</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">            fprintf (stderr, &quot;Status error (%s) occured in %s on line %d: %s\n&quot;,      \</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">                tp3_geterrormsg (stat), \</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">                __FILE__,               \</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">                __LINE__,               \</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">                #expr);                 \</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">            return stat;                \</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">        }                               \</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">    } while (0);</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="ttap3__base_8h.html#a008e8618401c12c0f5918dfb7cd64739">  156</a></span>&#160;<span class="preprocessor">#define TP3_STAT_PRETURN(msg,stat)  \</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">    do {                        \</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">        fprintf (stderr, &quot;Status error (%s) occured in %s on line %d: %s\n&quot;,      \</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">            tp3_geterrormsg (stat),  \</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">            __FILE__,               \</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">            __LINE__,               \</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">            msg);                   \</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">        return stat;                \</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">    } while (0);</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="ttap3__base_8h.html#a4473769b0b0c74be88c80372e20ed12e">  167</a></span>&#160;<span class="preprocessor">#define TP3_EXP_RETURN(expr,ret,stat)  \</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">    do {                        \</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">        if ((expr)) {           \</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">            fprintf (stderr, &quot;Status error (%s) occured in %s on line %d.\n&quot;,      \</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">                tp3_geterrormsg (stat),  \</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">                __FILE__,               \</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">                __LINE__);              \</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">            return ret;                 \</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">        }                               \</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">    } while (0);</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<a class="code" href="ttap3__base_8h.html#af230b7055e577b15fecfc317167a2dbb">tp3_getframesize</a> (ptp3_frame_t pframe);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<a class="code" href="ttap3__base_8h.html#ade1f655d0237ed03da7e45b13b5761d0">tp3_writeframe</a> (ptp3_frame_t pframe, byte *buf, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<a class="code" href="ttap3__base_8h.html#a630d40391338335dadc79f348bc26fe8">tp3_readframe</a> (ptp3_frame_t pframe, byte *buf, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<a class="code" href="ttap3__base_8h.html#a0c6b2d1e19b9b437fea32fdab139d49f">tp3_generateframe</a> (ptp3_msg_t pmsg, ptp3_frame_t pframe);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<a class="code" href="ttap3__base_8h.html#a6746c95b75f13efcc2f84090cb138b64">tp3_parseframe</a> (ptp3_frame_t pframe, ptp3_msg_t pmsg);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<a class="code" href="ttap3__base_8h.html#a13ea6d738edf6de4d36fe353a160d012">tp3_releasemsg</a> (ptp3_msg_t pmsg);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<a class="code" href="ttap3__base_8h.html#a3bf30236a3efff225b5097136365fda8">tp3_releaseframe</a> (ptp3_frame_t pframe);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<a class="code" href="ttap3__base_8h.html#a4a5da1adcfe2538236ab97f6c957c228">tp3_addfield</a> (ptp3_msg_t pmsg, <a class="code" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, <span class="keywordtype">int</span> length, ptp3_fdata_t data);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<a class="code" href="ttap3__base_8h.html#ab8b122ca57bffa57244408dbf7903ab5">tp3_addfield_num</a> (ptp3_msg_t pmsg, <a class="code" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, <span class="keywordtype">int</span> data);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<a class="code" href="ttap3__base_8h.html#afb83bf1467b521ad5fc37d0309488865">tp3_addfield_bytes</a> (ptp3_msg_t pmsg, <a class="code" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, byte *ptr);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<a class="code" href="ttap3__base_8h.html#a9382f519df23ce55b2d28fd557495602">tp3_addfield_nbytes</a> (ptp3_msg_t pmsg, <a class="code" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, <span class="keywordtype">int</span> length, byte *ptr);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<a class="code" href="ttap3__base_8h.html#aeb758df84ce002d2f4c895b639b2108d">tp3_initmsg</a> (ptp3_msg_t pmsg);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<a class="code" href="ttap3__base_8h.html#a305861fd012c76a40fbf2990944d60c5">tp3_initframe</a> (ptp3_frame_t pframe);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<a class="code" href="ttap3__base_8h.html#a72b9eeb61b540f8cc2116a8d1f048a59">tp3_setheader</a> (ptp3_msg_t pmsg, <a class="code" href="ttap3__define_8h.html#a459a2e8971a9a925cc47d302dcc0f623">tp3_msgtype_t</a> msgtype, <a class="code" href="ttap3__define_8h.html#a56b21d4dc9a4b8ac0f80f7d330679db9">tp3_transtype_t</a> transtype, <span class="keywordtype">int</span> gcgid, <span class="keywordtype">int</span> gosid, <span class="keywordtype">int</span> msgseq);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<a class="code" href="ttap3__base_8h.html#ae18bc4ddb8ae1d26816232562a2485aa">tp3_readfield</a> (ptp3_msg_t pmsg, <a class="code" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, ptp3_fdata_t pdata);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<a class="code" href="ttap3__base_8h.html#a5f81595753dbb8d7cecf19a4abfcb2f3">tp3_readfield_num</a> (ptp3_msg_t pmsg, <a class="code" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code, <span class="keywordtype">int</span> *pdata);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<a class="code" href="ttap3__base_8h.html#a1fd9aa54ec856ad8714f3b936cc6067d">tp3_readfieldlen</a> (ptp3_msg_t pmsg, <a class="code" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<a class="code" href="ttap3__base_8h.html#a931e43e69078bddc47d6c428f7d4d8b1">tp3_isnumberinfield</a> (ptp3_msg_t pmsg, <a class="code" href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a> code);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<a class="code" href="ttap3__base_8h.html#a768e588670939ac305a71dbcabaf53d4">tp3_printmsg</a> (ptp3_msg_t pmsg);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<a class="code" href="ttap3__base_8h.html#a12c0a1afabda777aed97749c62b40890">tp3_printframe</a> (ptp3_frame_t pframe);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="keywordtype">char</span> *</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<a class="code" href="ttap3__base_8h.html#a706cd7289a53f8840f2ed474d1f98e9f">tp3_geterrormsg</a> (<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> stat);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<a class="code" href="ttap3__base_8h.html#a037e540026b768f1e1b6d9402b5e4bbd">tp3_printerror</a> (<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a> stat);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<a class="code" href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<a class="code" href="ttap3__base_8h.html#adaefc3e5e0599a6014a4956bdec238a8">tp3_setresponse</a> (ptp3_msg_t preq, ptp3_msg_t pres, <a class="code" href="ttap3__define_8h.html#a8df3dbbb5ea43ac61fd7457c8841efbf">tp3_rescode_t</a> rescode);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="uniontp3__fdata__t_html"><div class="ttname"><a href="uniontp3__fdata__t.html">tp3_fdata_t</a></div><div class="ttdef"><b>Definition:</b> ttap3_base.h:103</div></div>
+<div class="ttc" id="ttap3__define_8h_html_a46e86b898ee6aa00aa806fa661ac7c19"><div class="ttname"><a href="ttap3__define_8h.html#a46e86b898ee6aa00aa806fa661ac7c19">tp3_fieldcode_t</a></div><div class="ttdeci">tp3_fieldcode_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:66</div></div>
+<div class="ttc" id="ttap3__define_8h_html_a56b21d4dc9a4b8ac0f80f7d330679db9"><div class="ttname"><a href="ttap3__define_8h.html#a56b21d4dc9a4b8ac0f80f7d330679db9">tp3_transtype_t</a></div><div class="ttdeci">tp3_transtype_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:38</div></div>
+<div class="ttc" id="ttap3__base_8h_html_af230b7055e577b15fecfc317167a2dbb"><div class="ttname"><a href="ttap3__base_8h.html#af230b7055e577b15fecfc317167a2dbb">tp3_getframesize</a></div><div class="ttdeci">int tp3_getframesize(ptp3_frame_t pframe)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:22</div></div>
+<div class="ttc" id="ttap3__base_8h_html_adaefc3e5e0599a6014a4956bdec238a8"><div class="ttname"><a href="ttap3__base_8h.html#adaefc3e5e0599a6014a4956bdec238a8">tp3_setresponse</a></div><div class="ttdeci">tp3_stat_t tp3_setresponse(ptp3_msg_t preq, ptp3_msg_t pres, tp3_rescode_t rescode)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:718</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a12c0a1afabda777aed97749c62b40890"><div class="ttname"><a href="ttap3__base_8h.html#a12c0a1afabda777aed97749c62b40890">tp3_printframe</a></div><div class="ttdeci">void tp3_printframe(ptp3_frame_t pframe)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:634</div></div>
+<div class="ttc" id="structtp3__msg__t_html"><div class="ttname"><a href="structtp3__msg__t.html">tp3_msg_t</a></div><div class="ttdef"><b>Definition:</b> ttap3_base.h:121</div></div>
+<div class="ttc" id="ttap3__base_8h_html_ae18bc4ddb8ae1d26816232562a2485aa"><div class="ttname"><a href="ttap3__base_8h.html#ae18bc4ddb8ae1d26816232562a2485aa">tp3_readfield</a></div><div class="ttdeci">int tp3_readfield(ptp3_msg_t pmsg, tp3_fieldcode_t code, ptp3_fdata_t pdata)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:573</div></div>
+<div class="ttc" id="ttap3__base_8h_html_ade1f655d0237ed03da7e45b13b5761d0"><div class="ttname"><a href="ttap3__base_8h.html#ade1f655d0237ed03da7e45b13b5761d0">tp3_writeframe</a></div><div class="ttdeci">tp3_stat_t tp3_writeframe(ptp3_frame_t pframe, byte *buf, int len)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:27</div></div>
+<div class="ttc" id="structtp3__msg__t_html_a8cb2f241b6b52ce767cda48eb905ae50"><div class="ttname"><a href="structtp3__msg__t.html#a8cb2f241b6b52ce767cda48eb905ae50">tp3_msg_t::fields</a></div><div class="ttdeci">ptp3_field_t fields</div><div class="ttdoc">메세지 가변 필드 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:123</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a6746c95b75f13efcc2f84090cb138b64"><div class="ttname"><a href="ttap3__base_8h.html#a6746c95b75f13efcc2f84090cb138b64">tp3_parseframe</a></div><div class="ttdeci">tp3_stat_t tp3_parseframe(ptp3_frame_t pframe, ptp3_msg_t pmsg)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:310</div></div>
+<div class="ttc" id="structtp3__framefield__t_html_a340224220f306b53e8068bfe4985c058"><div class="ttname"><a href="structtp3__framefield__t.html#a340224220f306b53e8068bfe4985c058">tp3_framefield_t::data</a></div><div class="ttdeci">byte data</div><div class="ttdoc">메세지 프레임 필드의 데이터의 첫 데이터. 해당 위치를 알기 위해서 사용됨. </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:36</div></div>
+<div class="ttc" id="structtp3__frame__t_html_ab6cc0f47e88f18f6af00ef14bd18a74e"><div class="ttname"><a href="structtp3__frame__t.html#ab6cc0f47e88f18f6af00ef14bd18a74e">tp3_frame_t::length</a></div><div class="ttdeci">int length</div><div class="ttdoc">메세지 프레임의 데이터부분 길이. +4를 해야 전체 길이임 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:22</div></div>
+<div class="ttc" id="structtp3__framefield__t_html"><div class="ttname"><a href="structtp3__framefield__t.html">tp3_framefield_t</a></div><div class="ttdef"><b>Definition:</b> ttap3_base.h:33</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a72b9eeb61b540f8cc2116a8d1f048a59"><div class="ttname"><a href="ttap3__base_8h.html#a72b9eeb61b540f8cc2116a8d1f048a59">tp3_setheader</a></div><div class="ttdeci">tp3_stat_t tp3_setheader(ptp3_msg_t pmsg, tp3_msgtype_t msgtype, tp3_transtype_t transtype, int gcgid, int gosid, int msgseq)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:524</div></div>
+<div class="ttc" id="ttap3__base_8h_html_afb83bf1467b521ad5fc37d0309488865"><div class="ttname"><a href="ttap3__base_8h.html#afb83bf1467b521ad5fc37d0309488865">tp3_addfield_bytes</a></div><div class="ttdeci">tp3_stat_t tp3_addfield_bytes(ptp3_msg_t pmsg, tp3_fieldcode_t code, byte *ptr)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:496</div></div>
+<div class="ttc" id="structtp3__header__t_html_aba24a842a6098785bf794f235777bca6"><div class="ttname"><a href="structtp3__header__t.html#aba24a842a6098785bf794f235777bca6">tp3_header_t::msgtype</a></div><div class="ttdeci">tp3_msgtype_t msgtype</div><div class="ttdoc">메세지 타입 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:81</div></div>
+<div class="ttc" id="structtp3__msg__t_html_a16ccd70e1528e0bf89447681ff22afff"><div class="ttname"><a href="structtp3__msg__t.html#a16ccd70e1528e0bf89447681ff22afff">tp3_msg_t::header</a></div><div class="ttdeci">tp3_header_t header</div><div class="ttdoc">메세지 고정 헤더 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:122</div></div>
+<div class="ttc" id="uniontp3__fdata__t_html_a429e5bd951dc64fbacac9374ec68a220"><div class="ttname"><a href="uniontp3__fdata__t.html#a429e5bd951dc64fbacac9374ec68a220">tp3_fdata_t::pbyte</a></div><div class="ttdeci">byte * pbyte</div><div class="ttdoc">N 바이트 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:105</div></div>
+<div class="ttc" id="ttap3__base_8h_html_ab8b122ca57bffa57244408dbf7903ab5"><div class="ttname"><a href="ttap3__base_8h.html#ab8b122ca57bffa57244408dbf7903ab5">tp3_addfield_num</a></div><div class="ttdeci">tp3_stat_t tp3_addfield_num(ptp3_msg_t pmsg, tp3_fieldcode_t code, int data)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:485</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a037e540026b768f1e1b6d9402b5e4bbd"><div class="ttname"><a href="ttap3__base_8h.html#a037e540026b768f1e1b6d9402b5e4bbd">tp3_printerror</a></div><div class="ttdeci">void tp3_printerror(tp3_stat_t stat)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:662</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a6a3dfd6ef572814fe8f5f84fbc5f8f5e"><div class="ttname"><a href="ttap3__base_8h.html#a6a3dfd6ef572814fe8f5f84fbc5f8f5e">tp3_readnum</a></div><div class="ttdeci">int tp3_readnum(byte *pbyte, int len)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:282</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a0c6b2d1e19b9b437fea32fdab139d49f"><div class="ttname"><a href="ttap3__base_8h.html#a0c6b2d1e19b9b437fea32fdab139d49f">tp3_generateframe</a></div><div class="ttdeci">tp3_stat_t tp3_generateframe(ptp3_msg_t pmsg, ptp3_frame_t pframe)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:251</div></div>
+<div class="ttc" id="ttap3__define_8h_html_a1bd7b391b44c2aa2f4d92192d7059cc5"><div class="ttname"><a href="ttap3__define_8h.html#a1bd7b391b44c2aa2f4d92192d7059cc5">tp3_stat_t</a></div><div class="ttdeci">tp3_stat_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:147</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a630d40391338335dadc79f348bc26fe8"><div class="ttname"><a href="ttap3__base_8h.html#a630d40391338335dadc79f348bc26fe8">tp3_readframe</a></div><div class="ttdeci">int tp3_readframe(ptp3_frame_t pframe, byte *buf, int len)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:37</div></div>
+<div class="ttc" id="structtp3__header__t_html_a99476e3e1df238999a53b9e75d5ddd1b"><div class="ttname"><a href="structtp3__header__t.html#a99476e3e1df238999a53b9e75d5ddd1b">tp3_header_t::msgseq</a></div><div class="ttdeci">int msgseq</div><div class="ttdoc">메세지 일련번호 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:87</div></div>
+<div class="ttc" id="ttap3__base_8h_html_aeb758df84ce002d2f4c895b639b2108d"><div class="ttname"><a href="ttap3__base_8h.html#aeb758df84ce002d2f4c895b639b2108d">tp3_initmsg</a></div><div class="ttdeci">void tp3_initmsg(ptp3_msg_t pmsg)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:538</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a706cd7289a53f8840f2ed474d1f98e9f"><div class="ttname"><a href="ttap3__base_8h.html#a706cd7289a53f8840f2ed474d1f98e9f">tp3_geterrormsg</a></div><div class="ttdeci">char * tp3_geterrormsg(tp3_stat_t stat)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:673</div></div>
+<div class="ttc" id="ttap3__define_8h_html_a459a2e8971a9a925cc47d302dcc0f623"><div class="ttname"><a href="ttap3__define_8h.html#a459a2e8971a9a925cc47d302dcc0f623">tp3_msgtype_t</a></div><div class="ttdeci">tp3_msgtype_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:20</div></div>
+<div class="ttc" id="structtp3__msg__t_html_a66c78832cf542c7d5acc3abe9c522809"><div class="ttname"><a href="structtp3__msg__t.html#a66c78832cf542c7d5acc3abe9c522809">tp3_msg_t::sizeoffields</a></div><div class="ttdeci">int sizeoffields</div><div class="ttdoc">가변 필드의 전체 크기 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:125</div></div>
+<div class="ttc" id="structtp3__header__t_html_a33b5b74ac5b5f34a7d09a407925504c4"><div class="ttname"><a href="structtp3__header__t.html#a33b5b74ac5b5f34a7d09a407925504c4">tp3_header_t::gcgid</a></div><div class="ttdeci">int gcgid</div><div class="ttdoc">20bit 통합제어기 식별자 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:83</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a4a5da1adcfe2538236ab97f6c957c228"><div class="ttname"><a href="ttap3__base_8h.html#a4a5da1adcfe2538236ab97f6c957c228">tp3_addfield</a></div><div class="ttdeci">tp3_stat_t tp3_addfield(ptp3_msg_t pmsg, tp3_fieldcode_t code, int length, ptp3_fdata_t data)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:456</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a1fd9aa54ec856ad8714f3b936cc6067d"><div class="ttname"><a href="ttap3__base_8h.html#a1fd9aa54ec856ad8714f3b936cc6067d">tp3_readfieldlen</a></div><div class="ttdeci">int tp3_readfieldlen(ptp3_msg_t pmsg, tp3_fieldcode_t code)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:548</div></div>
+<div class="ttc" id="structtp3__header__t_html_a90856f6de9b1d904a72469b47bef9051"><div class="ttname"><a href="structtp3__header__t.html#a90856f6de9b1d904a72469b47bef9051">tp3_header_t::rescode</a></div><div class="ttdeci">tp3_rescode_t rescode</div><div class="ttdoc">메세지 응답코드 (고정헤더는 아니지만 편의를 위해 포함됨) </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:89</div></div>
+<div class="ttc" id="structtp3__header__t_html_aca1f30c2e37eeaa7007611bfda8e583f"><div class="ttname"><a href="structtp3__header__t.html#aca1f30c2e37eeaa7007611bfda8e583f">tp3_header_t::gosid</a></div><div class="ttdeci">int gosid</div><div class="ttdoc">20bit 운영시스템 식별자 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:84</div></div>
+<div class="ttc" id="ttap3__define_8h_html_a8df3dbbb5ea43ac61fd7457c8841efbf"><div class="ttname"><a href="ttap3__define_8h.html#a8df3dbbb5ea43ac61fd7457c8841efbf">tp3_rescode_t</a></div><div class="ttdeci">tp3_rescode_t</div><div class="ttdef"><b>Definition:</b> ttap3_define.h:50</div></div>
+<div class="ttc" id="structtp3__frame__t_html_abc9d67d63b271f922157490548bc2657"><div class="ttname"><a href="structtp3__frame__t.html#abc9d67d63b271f922157490548bc2657">tp3_frame_t::checksum</a></div><div class="ttdeci">int checksum</div><div class="ttdoc">메세지 프레임 데이터의 체크썸 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:24</div></div>
+<div class="ttc" id="structtp3__frame__t_html_a583b58066e4b44c0814e82004643995c"><div class="ttname"><a href="structtp3__frame__t.html#a583b58066e4b44c0814e82004643995c">tp3_frame_t::data</a></div><div class="ttdeci">byte * data</div><div class="ttdoc">메세지 프레임의 데이터. 맨 마지막 2바이트 체크썸을 포함. </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:23</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a3bf30236a3efff225b5097136365fda8"><div class="ttname"><a href="ttap3__base_8h.html#a3bf30236a3efff225b5097136365fda8">tp3_releaseframe</a></div><div class="ttdeci">void tp3_releaseframe(ptp3_frame_t pframe)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:382</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a13ea6d738edf6de4d36fe353a160d012"><div class="ttname"><a href="ttap3__base_8h.html#a13ea6d738edf6de4d36fe353a160d012">tp3_releasemsg</a></div><div class="ttdeci">void tp3_releasemsg(ptp3_msg_t pmsg)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:372</div></div>
+<div class="ttc" id="uniontp3__fdata__t_html_a635486d124f4562a1dab05637bc10c6b"><div class="ttname"><a href="uniontp3__fdata__t.html#a635486d124f4562a1dab05637bc10c6b">tp3_fdata_t::data</a></div><div class="ttdeci">int data</div><div class="ttdoc">1~4 바이트 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:104</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a9382f519df23ce55b2d28fd557495602"><div class="ttname"><a href="ttap3__base_8h.html#a9382f519df23ce55b2d28fd557495602">tp3_addfield_nbytes</a></div><div class="ttdeci">tp3_stat_t tp3_addfield_nbytes(ptp3_msg_t pmsg, tp3_fieldcode_t code, int length, byte *ptr)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:511</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a5f81595753dbb8d7cecf19a4abfcb2f3"><div class="ttname"><a href="ttap3__base_8h.html#a5f81595753dbb8d7cecf19a4abfcb2f3">tp3_readfield_num</a></div><div class="ttdeci">int tp3_readfield_num(ptp3_msg_t pmsg, tp3_fieldcode_t code, int *pdata)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:588</div></div>
+<div class="ttc" id="structtp3__field__t_html_a801ccdcf26314c7372a6b69880f98c66"><div class="ttname"><a href="structtp3__field__t.html#a801ccdcf26314c7372a6b69880f98c66">tp3_field_t::length</a></div><div class="ttdeci">int length</div><div class="ttdoc">필드 데이터 길이 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:111</div></div>
+<div class="ttc" id="structtp3__msg__t_html_ad300638b446d74b45ce3cc4f5ac312fb"><div class="ttname"><a href="structtp3__msg__t.html#ad300638b446d74b45ce3cc4f5ac312fb">tp3_msg_t::numoffields</a></div><div class="ttdeci">int numoffields</div><div class="ttdoc">가변 필드의 실제 개수 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:124</div></div>
+<div class="ttc" id="structtp3__header__t_html_a4af3ed17955d8a5c5210eec4049cc45d"><div class="ttname"><a href="structtp3__header__t.html#a4af3ed17955d8a5c5210eec4049cc45d">tp3_header_t::transtype</a></div><div class="ttdeci">tp3_transtype_t transtype</div><div class="ttdoc">메세지 전송타입 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:82</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a305861fd012c76a40fbf2990944d60c5"><div class="ttname"><a href="ttap3__base_8h.html#a305861fd012c76a40fbf2990944d60c5">tp3_initframe</a></div><div class="ttdeci">void tp3_initframe(ptp3_frame_t pframe)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:543</div></div>
+<div class="ttc" id="structtp3__field__t_html_a26a4cce90b76627991fd8b4a28512e52"><div class="ttname"><a href="structtp3__field__t.html#a26a4cce90b76627991fd8b4a28512e52">tp3_field_t::data</a></div><div class="ttdeci">tp3_fdata_t data</div><div class="ttdoc">데이터 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:112</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a768e588670939ac305a71dbcabaf53d4"><div class="ttname"><a href="ttap3__base_8h.html#a768e588670939ac305a71dbcabaf53d4">tp3_printmsg</a></div><div class="ttdeci">void tp3_printmsg(ptp3_msg_t pmsg)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:602</div></div>
+<div class="ttc" id="structtp3__field__t_html_a6e96ac00f13c6ac3bf3b6ee3d9738e5b"><div class="ttname"><a href="structtp3__field__t.html#a6e96ac00f13c6ac3bf3b6ee3d9738e5b">tp3_field_t::code</a></div><div class="ttdeci">tp3_fieldcode_t code</div><div class="ttdoc">필드 코드 </div><div class="ttdef"><b>Definition:</b> ttap3_base.h:110</div></div>
+<div class="ttc" id="ttap3__base_8h_html_a931e43e69078bddc47d6c428f7d4d8b1"><div class="ttname"><a href="ttap3__base_8h.html#a931e43e69078bddc47d6c428f7d4d8b1">tp3_isnumberinfield</a></div><div class="ttdeci">int tp3_isnumberinfield(ptp3_msg_t pmsg, tp3_fieldcode_t code)</div><div class="ttdef"><b>Definition:</b> ttap3_base.c:558</div></div>
+<div class="ttc" id="structtp3__field__t_html"><div class="ttname"><a href="structtp3__field__t.html">tp3_field_t</a></div><div class="ttdef"><b>Definition:</b> ttap3_base.h:109</div></div>
+<div class="ttc" id="structtp3__frame__t_html"><div class="ttname"><a href="structtp3__frame__t.html">tp3_frame_t</a></div><div class="ttdef"><b>Definition:</b> ttap3_base.h:21</div></div>
+<div class="ttc" id="structtp3__header__t_html"><div class="ttname"><a href="structtp3__header__t.html">tp3_header_t</a></div><div class="ttdef"><b>Definition:</b> ttap3_base.h:79</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+생성시간 : 목 11월 17 2016 10:46:00, 프로젝트명 : libtp3, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

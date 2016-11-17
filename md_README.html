@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>libtp3: 관련된 페이지</title>
+<title>libtp3: libtp3 : A library for TTAK.KO-06.0288 Part 3</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
       </li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -74,19 +73,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'검색');
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">관련된 페이지</div>  </div>
+<div class="title">libtp3 : A library for TTAK.KO-06.0288 Part 3 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">다음은 관련된 모든 문서화 페이지들의 목록입니다.:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_README.html" target="_self">libtp3 : A library for TTAK.KO-06.0288 Part 3</a></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="md_doc_8src_ttap3_analysis.html" target="_self">TTAK.KO-06.0288 Part 3 분석 결과		{ttap3analysis}</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="P3R1analysis.html" target="_self">TTAK.KO-06.0288/R1 Part 3 분석 결과</a></td><td class="desc"></td></tr>
-</table>
-</div><!-- directory -->
-</div><!-- contents -->
+<div class="textblock"><h2>Introduction</h2>
+<p>libtp3 는 온실관제시스템 표준인 TTAK.KO-06.0288/R1 Part 3 표준을 구현한 라이브러리로, 온실 운영시스템과 온실 통합제어기 사이의 통신 메세지를 작성, 해석할 수 있다. 해당 표준에 대한 자세한 사항은 <a href="http://www.tta.or.kr/data/ttas_view.jsp?rn=1&amp;pk_num=TTAK.KO-06.0288-Part3">TTA 표준문서</a>를 참조하길 바란다.</p>
+<h2>libtp3의 구성</h2>
+<p>libtp3 는 5가지 모듈로 구성된다.</p><ul>
+<li>ttap3_base : 표준 메세지 구조를 처리할 수 있는 데이터 타입, 상수 및 함수 관련 모듈</li>
+<li>ttap3_util : 라이브러리에서 사용할 유틸리티 함수 및 관련 데이터 타입</li>
+<li>ttap3_process : 메세지 처리를 위한 콜백함수 관련 모듈</li>
+<li>ttap3_gcg : 온실통합제어기에서 사용할 API</li>
+<li>ttap3_gos : 온실운영시스템에서 사용할 API</li>
+</ul>
+<h2>Dependency</h2>
+<p>libtp3 는 비동기 이벤트방식의 I/O를 위해서 libuv를 사용합니다.</p><ul>
+<li><a href="https://github.com/libuv/libuv">libuv</a> 다음과 같이 설치가 가능하다. ``` wget <a href="https://github.com/libuv/libuv/archive/v1.x.zip">https://github.com/libuv/libuv/archive/v1.x.zip</a> unzip v1.x.zip -d v1.x cd v1.x/libuv-1.x ./autogen.sh ./configure make make install ```</li>
+</ul>
+<h2>Build Instructions</h2>
+<p>``` mkdir release cd release cmake .. make make install ```</p>
+<h2>Documentation</h2>
+<p>libtp3의 사용법은 <a href="http://">레퍼런스</a>를 참조한다.</p>
+<h2>Unit tests &amp; Sample</h2>
+<p>libtp3는 다음 명령을 통해 단위테스트를 수행할 수 있다. 단위테스트를 보고 사용법을 확인하는 것도 한가지 방법이다.</p>
+<p>``` make test ```</p>
+<h3>Base test</h3>
+<ul>
+<li>test_base_frame : Generate &amp; Parse frame</li>
+<li>test_base_addnreadfield : Add field using 4 functions &amp; read the field</li>
+<li>test_base_errormsg : Error message</li>
+<li>test_base_response : Response message creation</li>
+</ul>
+<h3>Util</h3>
+<ul>
+<li>test_util_nodedata : Initialize &amp; release data for a node</li>
+<li>test_util_nsetdata : Initialize &amp; release data for a node set</li>
+<li>test_util_addfield : Add field from node data</li>
+<li>test_util_timestamp : Translate between epoch &amp; timestamp</li>
+<li>test_util_statblock : Generate &amp; parse status history block</li>
+<li>test_util_envblock : Generate &amp; parse environment history block</li>
+</ul>
+<h3>GCG &amp; GOS</h3>
+<ul>
+<li>test_gng_connect : Connection message</li>
+<li>test_gos_resmsgs : Response 4 messages</li>
+<li>test_gos_genmsgs : Generate 8 messages started from GOS</li>
+<li>test_gcg_resmsgs : Response 8 messages</li>
+<li>test_gos_cfmmsgs : Confirm 4 meesages</li>
+</ul>
+<h3>Process</h3>
+<ul>
+<li>test_process_callback : Callback Test </li>
+</ul>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 생성시간 : 목 11월 17 2016 10:46:00, 프로젝트명 : libtp3, 생성자 :  &#160;<a href="http://www.doxygen.org/index.html">
