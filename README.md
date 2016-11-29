@@ -14,7 +14,8 @@ libtp3 는 5가지 모듈로 구성된다.
  - ttap3_gos : 온실운영시스템에서 사용할 API
 
 ## Dependency
-libtp3 는 비동기 이벤트방식의 I/O를 위해서 libuv를 사용합니다.
+libtp3 는 비동기 이벤트방식의 I/O를 위해서 libuv를 사용한다.
+
 * [libuv](https://github.com/libuv/libuv)
 다음과 같이 설치가 가능하다.
 ```
@@ -38,7 +39,7 @@ make install
 ```
 
 ## Documentation
-libtp3의 사용법은 [레퍼런스](http://)를 참조한다.
+libtp3의 사용법은 [레퍼런스](https://ezfarm-farmcloud.github.io/libtp3/)를 참조한다.
 
 ## Unit tests & Sample
 libtp3는 다음 명령을 통해 단위테스트를 수행할 수 있다.
